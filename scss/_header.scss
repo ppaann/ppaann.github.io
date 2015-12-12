@@ -1,3 +1,8 @@
-.site-title{
+.header{
+  .header-container{
+    @include vertical-center();
+  }
+  .site-title{
 
+  }
 }
