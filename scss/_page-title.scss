@@ -1,0 +1,32 @@
+/*
+*  title over lay
+*/
+#page-title{
+  padding: 50px 0 40px;
+  margin-bottom: 50px;
+  position: relative;
+  &:after{
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  #titleoverlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: rgba(9, 133, 143, 0.9);
+  }
+  #title-container{
+    position:relative;
+    #title{
+      margin-left: 40px;
+      color: white;
+    }
+  }
+  &.portfolio-title{
+    background-image: url("../images/title-profilio.PNG");
+  }
+}
