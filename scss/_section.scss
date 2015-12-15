@@ -1,0 +1,17 @@
+.section{
+  @include grid-row;
+  padding-bottom: 50px;
+}
+.subtitle{
+  width: 100%;
+  padding: 10px 0 20px 0;
+}
+.left-img{
+  padding: 10px;
+  border: 3px solid rgb(132, 194, 199);
+}
+footer{
+  margin-top: 30px;
+  padding: 30px;
+  background-color: rgba(132, 194, 199, 0.5);
+}

@@ -4,8 +4,8 @@
   "repository": "",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
     "grunt-sass": "^1.1.0",
     "node-sass": "^3.4.2"
   }
