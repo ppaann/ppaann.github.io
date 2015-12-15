@@ -1,66 +1,10 @@
-// Global variables and styles
-@import '../node_modules/foundation-sites/scss/global';
-
-// Sass utilities
-@import '../node_modules/foundation-sites/scss/util/breakpoint';
-@import '../node_modules/foundation-sites/scss/util/color';
-@import '../node_modules/foundation-sites/scss/util/mixins';
-@import '../node_modules/foundation-sites/scss/util/selector';
-@import '../node_modules/foundation-sites/scss/util/unit';
-@import '../node_modules/foundation-sites/scss/util/util';
-@import '../node_modules/foundation-sites/scss/util/value';
-
 // setting files
-@import "settings";
-@import "foundation";
 
-// Components
-// @import '../node_modules/foundation-sites/scss/grid/grid';
-// @import '../node_modules/foundation-sites/scss/typography/alignment';
-// @import '../node_modules/foundation-sites/scss/typography/base';
-// @import '../node_modules/foundation-sites/scss/typography/helpers';
-// @import '../node_modules/foundation-sites/scss/typography/print';
-// @import '../node_modules/foundation-sites/scss/typography/typography';
-// @import '../node_modules/foundation-sites/scss/forms/checkbox';
-// @import '../node_modules/foundation-sites/scss/forms/error';
-// @import '../node_modules/foundation-sites/scss/forms/fieldset';
-// @import '../node_modules/foundation-sites/scss/forms/forms';
-// @import '../node_modules/foundation-sites/scss/forms/help-text';
-// @import '../node_modules/foundation-sites/scss/forms/input-group';
-// @import '../node_modules/foundation-sites/scss/forms/label';
-// @import '../node_modules/foundation-sites/scss/forms/select';
-// @import '../node_modules/foundation-sites/scss/forms/text';
-// @import '../node_modules/foundation-sites/scss/components/visibility';
-// @import '../node_modules/foundation-sites/scss/components/float';
-// @import '../node_modules/foundation-sites/scss/components/button';
-// @import '../node_modules/foundation-sites/scss/components/button-group';
-// @import '../node_modules/foundation-sites/scss/components/accordion-menu';
-// @import '../node_modules/foundation-sites/scss/components/accordion';
-// @import '../node_modules/foundation-sites/scss/components/badge';
-// @import '../node_modules/foundation-sites/scss/components/breadcrumbs';
-// @import '../node_modules/foundation-sites/scss/components/callout';
-// @import '../node_modules/foundation-sites/scss/components/close-button';
-// @import '../node_modules/foundation-sites/scss/components/drilldown';
-// @import '../node_modules/foundation-sites/scss/components/dropdown-menu';
-// @import '../node_modules/foundation-sites/scss/components/dropdown';
-// @import '../node_modules/foundation-sites/scss/components/flex-video';
-// @import '../node_modules/foundation-sites/scss/components/label';
-// @import '../node_modules/foundation-sites/scss/components/media-object';
-// @import '../node_modules/foundation-sites/scss/components/menu';
-// @import '../node_modules/foundation-sites/scss/components/off-canvas';
-// @import '../node_modules/foundation-sites/scss/components/orbit';
-// @import '../node_modules/foundation-sites/scss/components/pagination';
-// @import '../node_modules/foundation-sites/scss/components/progress-bar';
-// @import '../node_modules/foundation-sites/scss/components/reveal';
-// @import '../node_modules/foundation-sites/scss/components/slider';
-// @import '../node_modules/foundation-sites/scss/components/sticky';
-// @import '../node_modules/foundation-sites/scss/components/switch';
-// @import '../node_modules/foundation-sites/scss/components/table';
-// @import '../node_modules/foundation-sites/scss/components/tabs';
-// @import '../node_modules/foundation-sites/scss/components/title-bar';
-// @import '../node_modules/foundation-sites/scss/components/top-bar';
-// @import '../node_modules/foundation-sites/scss/components/thumbnail';
-// @import '../node_modules/foundation-sites/scss/components/tooltip';
+@import "foundation";
+@import "settings";
+
+
+@include foundation-everything;
 
 
 // application styles

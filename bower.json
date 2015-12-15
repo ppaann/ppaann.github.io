@@ -1,6 +1,6 @@
 {
-  "name": "foundation-libsass-template",
-  "dependencies": {
-    "foundation": "zurb/bower-foundation"
+  "name": "my-site-bower",
+  "devDependencies": {
+    "foundation-sites": "~6.0.5"
   }
 }
