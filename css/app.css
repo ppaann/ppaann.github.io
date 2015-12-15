@@ -3112,7 +3112,8 @@ table.hover tr:nth-of-type(even):hover {
     float: right; } }
 
 .header .site-title {
-  padding-top: 5px; }
+  padding-top: 5px;
+  font-weight: 300; }
 
 .header ul.menu li a:hover {
   background-color: #fefefe;
@@ -3168,5 +3169,11 @@ footer {
   margin-top: 30px;
   padding: 30px;
   background-color: rgba(132, 194, 199, 0.5); }
+
+h1, h2, h3, h4 {
+  font-family: 'Arvo', Georgia, Times, serif; }
+
+p {
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
 
 /*# sourceMappingURL=app.css.map */
