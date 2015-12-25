@@ -17,15 +17,26 @@ module.exports = function(grunt) {
     //   }
     // },
 
-    compass:{
+    concat: {
+      options: {
+        separator: ';\n',
+        banner: '/*! <%= pkg.name %> - <%= pkg.version %> - ' + ' <%= grunt.template.today("yyyy-mm-dd") %> */',
+      },
+      dev: {
+        src:['app/js/**/*.js'],
+        dest: 'dist/js/main.js'
+      }
+    },
+
+    compass: {
       options: {
         importPath:['bower_components/foundation-sites/scss'],
       },
-      dev:{
+      dev: {
         options: {
           outputStyle: 'nested',
           sassDir: ['styles/scss/'],
-          cssDir: ['styles/css'],
+          cssDir: ['dist/styles/css'],
           imageDir: ['styles/images'],
           environment: 'development',
           sourcemap: true
@@ -41,6 +52,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      options: {
+        interrupt: true,
+      },
       grunt: {
         options: {
           reload: true
@@ -48,24 +62,29 @@ module.exports = function(grunt) {
         files: ['Gruntfile.js']
       },
 
-      //sass: {
-      compass:{
+      compass: {
         files: 'styles/scss/**/*.scss',
         tasks: ['compass:dev']
+      },
+
+      concat: {
+        files: ['app/js/**/*.js'],
+        tasks: ['concat:dev']
       }
     },
 
-    // clean: {
-    //   build: [
-    //     'build'
-    //   ]
-    // }
+    clean: {
+      build: [
+        'build'
+      ]
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
 
-  //grunt.registerTask('build', ['compass']);
+  grunt.registerTask('build', ['compass:dev', 'concat']);
   grunt.registerTask('default', ['watch']);
 }
