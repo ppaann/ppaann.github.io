@@ -2,40 +2,25 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // sass: {
-    //   options: {
-    //     includePaths: ['bower_components/foundation-sites/scss']
-    //   },
-    //   dist: {
-    //     options: {
-    //       outputStyle: 'nested',
-    //       sourceMap: true,
-    //     },
-    //     files: {
-    //       'css/app.css': 'scss/app.scss'
-    //     }
-    //   }
-    // },
-
     concat: {
       options: {
-        separator: ';\n',
-        banner: '/*! <%= pkg.name %> - <%= pkg.version %> - ' + ' <%= grunt.template.today("yyyy-mm-dd") %> */',
+        separator: '\n',
+        banner: '/*! <%= pkg.name %> - <%= pkg.version %> - ' + ' <%= grunt.template.today("yyyy-mm-dd") %> */'
       },
-      dev: {
+      dev: {  
         src:['app/js/**/*.js'],
-        dest: 'dist/js/main.js'
+        dest: 'dist/js/main.js',      
       }
     },
 
     compass: {
       options: {
         importPath:['bower_components/foundation-sites/scss'],
+        sassDir: ['styles/scss'],
       },
       dev: {
         options: {
           outputStyle: 'nested',
-          sassDir: ['styles/scss/'],
           cssDir: ['dist/styles/css'],
           imageDir: ['styles/images'],
           environment: 'development',
@@ -44,7 +29,6 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          sassDir: ['styles/scss'],
           cssDir: ['dist/styles/css'],
           environment: 'production'
         }
@@ -63,28 +47,35 @@ module.exports = function(grunt) {
       },
 
       compass: {
-        files: 'styles/scss/**/*.scss',
+        files: ['styles/scss/**/*.scss'],
         tasks: ['compass:dev']
       },
 
-      concat: {
+      script: {
         files: ['app/js/**/*.js'],
-        tasks: ['concat:dev']
+        tasks: ['concat']
       }
     },
 
     clean: {
-      build: [
-        'build'
-      ]
-    }
+      build: ['dist']
+    },
+    connect: {
+      server: {
+        options: {
+          hostname: 'localhost',
+          port: 8080
+        }
+      }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('build', ['compass:dev', 'concat']);
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('build', ['clean','compass:dev', 'concat']);
+  grunt.registerTask('default', ['connect:server','watch']);
 }
