@@ -2,15 +2,17 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    concat: {
-      options: {
-        separator: '\n',
-        banner: '/*! <%= pkg.name %> - <%= pkg.version %> - ' + ' <%= grunt.template.today("yyyy-mm-dd") %> */'
-      },
-      dev: {  
-        src:['app/js/**/*.js'],
-        dest: 'dist/js/main.js',      
+    bower: {
+      install: {
+         //just run $ grunt bower:install and you'll see files from your Bower packages in lib directory
+        options: {
+          layout: 'byType',
+        }
       }
+    },
+
+    clean: {
+      build: ['dist']
     },
 
     compass: {
@@ -31,6 +33,26 @@ module.exports = function(grunt) {
         options: {
           cssDir: ['dist/styles/css'],
           environment: 'production'
+        }
+      }
+    },
+
+    concat: {
+      options: {
+        separator: '\n',
+        banner: '/*! <%= pkg.name %> - <%= pkg.version %> - ' + ' <%= grunt.template.today("yyyy-mm-dd") %> */'
+      },
+      dev: {  
+        src:['app/js/**/*.js'],
+        dest: 'dist/js/main.js',
+      }
+    },
+
+    connect: {
+      server: {
+        options: {
+          hostname: 'localhost',
+          port: 8080
         }
       }
     },
@@ -56,18 +78,6 @@ module.exports = function(grunt) {
         tasks: ['concat']
       }
     },
-
-    clean: {
-      build: ['dist']
-    },
-    connect: {
-      server: {
-        options: {
-          hostname: 'localhost',
-          port: 8080
-        }
-      }
-    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -76,6 +86,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
+  grunt.loadNpmTasks('grunt-bower-task');
+
+  grunt.registerTask('deploy', ['clean', 'bower:install'])
   grunt.registerTask('build', ['clean','compass:dev', 'concat']);
   grunt.registerTask('default', ['connect:server','watch']);
 }
