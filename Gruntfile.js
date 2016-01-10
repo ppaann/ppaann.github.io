@@ -19,6 +19,7 @@ module.exports = function(grunt) {
       options: {
         importPath:['bower_components/foundation-sites/scss'],
         sassDir: ['styles/scss'],
+        raw: 'Encoding.default_external = \'utf-8\'\n',
       },
       dev: {
         options: {
@@ -89,6 +90,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bower-task');
 
   grunt.registerTask('deploy', ['clean', 'bower:install'])
-  grunt.registerTask('build', ['clean','compass:dev', 'concat']);
-  grunt.registerTask('default', ['connect:server','watch']);
+  grunt.registerTask('build', ['clean','bower:install','compass:dev', 'concat']);
+  grunt.registerTask('default', ['connect','watch']);
 }

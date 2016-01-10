@@ -1,4 +1,4 @@
-/*! my-site - 0.0.1 -  2015-12-26 */'use strict';
+/*! my-site - 0.0.1 -  2016-01-10 */'use strict';
 
 var mySite = angular.module("mySite", ['ngRoute']);
 
@@ -7,6 +7,9 @@ mySite.config(['$routeProvider', function($routeProvider) {
 		when('/portfolio', {
 			templateUrl: 'app/htmls/portfolio.html',
 		}).
+    when('/portfolio/design-neo-navigation', {
+      templateUrl: 'app/htmls/portfolio/navigation-neo.html',
+    }).
 		otherwise ({
 			redirectTo: '/portfolio'
 		});
