@@ -19,23 +19,25 @@ module.exports = function(grunt) {
       options: {
         importPath:['bower_components/foundation-sites/scss'],
         sassDir: ['styles/scss'],
+        imageDir: 'styles/images',
+        force: true,
         raw: 'Encoding.default_external = \'utf-8\'\n',
       },
       dev: {
         options: {
-          outputStyle: 'nested',
-          cssDir: ['dist/styles/css'],
-          imageDir: ['styles/images'],
+          cssDir: 'dist/styles/css',
           environment: 'development',
+          outputStyle: 'nested',
           sourcemap: true
         }
       },
       dist: {
         options: {
-          cssDir: ['dist/styles/css'],
-          environment: 'production'
+          cssDir: 'dist/styles/css',
+          environment: 'production',
+          outputStyle: 'compressed'
         }
-      }
+      },
     },
 
     concat: {
