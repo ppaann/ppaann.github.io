@@ -10,6 +10,9 @@ mySite.config(['$routeProvider', function($routeProvider) {
     when('/portfolio/design-neo-navigation', {
       templateUrl: 'app/htmls/portfolio/navigation-neo.html',
     }).
+    when('/portfolio/website-for-tablet', {
+      templateUrl: 'app/htmls/portfolio/website-for-tablet.html',
+    }).
 		otherwise ({
 			redirectTo: '/portfolio'
 		});
