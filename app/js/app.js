@@ -13,6 +13,9 @@ mySite.config(['$routeProvider', function($routeProvider) {
     when('/portfolio/website-for-tablet', {
       templateUrl: 'app/htmls/portfolio/website-for-tablet.html',
     }).
+    when('/portfolio/redesign-internal-web-ui', {
+      templateUrl: 'app/htmls/portfolio/redesign-internal-web-ui.html',
+    }).
 		otherwise ({
 			redirectTo: '/portfolio'
 		});

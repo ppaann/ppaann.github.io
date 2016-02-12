@@ -1,4 +1,4 @@
-/*! my-site - 0.0.1 -  2016-02-07 */'use strict';
+/*! my-site - 0.0.1 -  2016-02-12 */'use strict';
 
 var mySite = angular.module("mySite", ['ngRoute']);
 
@@ -12,6 +12,9 @@ mySite.config(['$routeProvider', function($routeProvider) {
     }).
     when('/portfolio/website-for-tablet', {
       templateUrl: 'app/htmls/portfolio/website-for-tablet.html',
+    }).
+    when('/portfolio/redesign-internal-web-ui', {
+      templateUrl: 'app/htmls/portfolio/redesign-internal-web-ui.html',
     }).
 		otherwise ({
 			redirectTo: '/portfolio'
