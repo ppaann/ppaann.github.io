@@ -4087,6 +4087,10 @@ footer {
   padding: 30px;
   background-color: rgba(132, 194, 199, 0.5); }
 
+/* line 1, ../../../styles/scss/_utilities.scss */
+.description {
+  color: #cacaca; }
+
 /* line 2, ../../../styles/scss/_resume.scss */
 #resume #cv-head {
   border-bottom: 2px solid red;
