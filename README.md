@@ -1,4 +1,11 @@
-# Foundation libsass template
+# Profile home page (version 0.1)
+
+Address:
+http://ppaann.github.io/#/portfolio
+
+The project uses Foundation and AngularJs
+
+## Foundation libsass template
 
 This is a template to start your own project that uses Grunt and libsass!
 
