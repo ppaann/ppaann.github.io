@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ppaann.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/ppaann.github.io/static/js/main.5819dfb2.chunk.js",
+    "main.js.map": "/ppaann.github.io/static/js/main.5819dfb2.chunk.js.map",
+    "runtime-main.js": "/ppaann.github.io/static/js/runtime-main.5d339cd8.js",
+    "runtime-main.js.map": "/ppaann.github.io/static/js/runtime-main.5d339cd8.js.map",
+    "static/js/2.049b2eb2.chunk.js": "/ppaann.github.io/static/js/2.049b2eb2.chunk.js",
+    "static/js/2.049b2eb2.chunk.js.map": "/ppaann.github.io/static/js/2.049b2eb2.chunk.js.map",
+    "static/js/3.9547f1f6.chunk.js": "/ppaann.github.io/static/js/3.9547f1f6.chunk.js",
+    "static/js/3.9547f1f6.chunk.js.map": "/ppaann.github.io/static/js/3.9547f1f6.chunk.js.map",
+    "index.html": "/ppaann.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/ppaann.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.049b2eb2.chunk.js.LICENSE.txt": "/ppaann.github.io/static/js/2.049b2eb2.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/ppaann.github.io/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d339cd8.js",
+    "static/js/2.049b2eb2.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.5819dfb2.chunk.js"
+  ]
+}
