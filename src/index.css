@@ -1,13 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200&display=swap');
 
 body {
   margin: 0;
+  font-size: 15px;
+  line-height: 21px;
   font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav {
+  padding: 5px 0 20px;
+  margin: 40px auto;
+  width: 80.77%;
+}
+
+.footer {
+  min-height: 300px;
+  background-color: rgba(242, 242, 242);
+  position: absolute;
+  bottom: 0
+}
+
+h4 {
+  float: left;
+  line-height: 21px;
+  width: 40%;
+}
+
+ul b {
+  font-weight: inherit;
+  color: #6E6E6E;
+  float: left;
+  width: 90px;
+}
+
+article {
+  padding: 19px 9.615% 22px;
+  margin: 80px auto 60px;
+}
+
+h1 {
+  padding: 80px 0 20px;
+  font-size: 72px;
+  font-family: 'Tinos', serif;
+  line-height: 80px;
 }
