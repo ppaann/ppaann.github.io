@@ -25,11 +25,11 @@ const Footer = () => {
             float: 'right'
           }}>
             <li>
-              <b>Email:</b>
+              <h6>Email:</h6>
               <a href="mailto:mailbox.pan@gmail.com">mailbox.pan@gmail.com</a>
             </li>
             <li>
-              <b>Linkedin:</b>
+              <h6>Linkedin:</h6>
               <a href="https://www.linkedin.com/in/panpanpan/">in/panpanpan</a>
             </li>
           </ul>

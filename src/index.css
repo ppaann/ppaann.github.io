@@ -8,6 +8,8 @@ body {
   font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(242, 242, 242);
+  color: rgba(17, 17, 17)
 }
 
 ul,
@@ -30,9 +32,7 @@ code {
 
 .footer {
   min-height: 300px;
-  background-color: rgba(242, 242, 242);
-  position: absolute;
-  bottom: 0
+  background-color: white;
 }
 
 h4 {
@@ -41,9 +41,12 @@ h4 {
   width: 40%;
 }
 
-ul b {
+h6 {
   font-weight: inherit;
   color: #6E6E6E;
+}
+
+ul h6 {
   float: left;
   width: 90px;
 }

@@ -14,16 +14,16 @@ const Navbar = () => {
         float: 'right'
       }}>
         <li>
-          <b>Email:</b>
+          <h6>Email:</h6>
           <a href="mailto:mailbox.pan@gmail.com">mailbox.pan@gmail.com</a>
         </li>
         <li>
-          <b>Linkedin:</b>
+          <h6>Linkedin:</h6>
           <a href="https://www.linkedin.com/in/panpanpan/">in/panpanpan</a>
         </li>
         <li>
           <Link to="/about">
-            <b>About</b></Link>
+            <h6>About</h6></Link>
         </li>
       </ul>
       <div className="hamburger" >
