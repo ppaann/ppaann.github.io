@@ -7,12 +7,13 @@ import About from './routes/About';
 
 
 function App() {
-  return (<>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
-  </>
+  return (
+    <div className="mainContainer">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
   );
 }
 

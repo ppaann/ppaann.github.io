@@ -22,6 +22,10 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/panpanpan/">in/panpanpan</a>
         </li>
         <li>
+          <h6>Source:</h6>
+          <a href="https://github.com/ppaann/ppaann.github.io/">github/ppaann</a>
+        </li>
+        <li>
           <Link to="/about">
             <h6>About</h6></Link>
         </li>

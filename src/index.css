@@ -3,8 +3,8 @@
 
 body {
   margin: 0;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 31px;
   font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -61,4 +61,20 @@ h1 {
   font-size: 72px;
   font-family: 'Tinos', serif;
   line-height: 80px;
+}
+
+.project-intr__container {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.project-intro__item {
+  width: 200px;
+  border-top: 1px solid #6E6E6E;
+}
+
+.project-intr__container p {
+  padding: 16px 0;
+  font-weight: 600;
 }
