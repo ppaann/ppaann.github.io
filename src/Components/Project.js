@@ -7,9 +7,9 @@ const Project = () => {
       <div className='project-container'>
         <div>
 
-          <h1>Redesign <a href="Suomi24.fi">Suomi24.fi</a>
+          <h2>Redesign <a href="Suomi24.fi">Suomi24.fi</a>
             : public internet forum in Finland.
-          </h1>
+          </h2>
         </div>
 
         <div className='project-logo' style={{
@@ -76,27 +76,61 @@ const Project = () => {
             <div>
               <ui>
                 <li>Sketch</li>
+                <li>Figma</li>
                 <li>Balsamiq</li>
                 <li>VWO</li>
                 <li>Hotjar</li>
-                <li>Google Analystic</li>
+                <li>google Analytics</li>
+                <li>Google Tag Manager</li>
                 <li>React</li>
-                <li>Javascript/CSS/Html</li>
+                <li>Javascript/CSS/HTML</li>
               </ui>
             </div>
           </div>
         </div>
 
         <div className="project-detail objective" style={{ borderTop: "1px solid black" }}>
-
-
+          <h2>Overview</h2>
 
           <div style={{ padding: "32px" }}>
             The Suomi24 team aimed to redesign their website to make it more fresh-looking and appealing to younger audiences, while also improve its mobile compatibility. In addition to updating the user interface (UI), the team needed to replace the outdated FlightJS frontend platform with React. I joined the team in August 2018 as the sole UX designer, leading the UX research and design for the new UI. Additionally, I worked as a frontend engineer with two other engineers to maintain and enhance the website.
-
+          </div>
+          <div>
+            <h3>Problems</h3>
+            <h3>Proposed Solutions</h3>
           </div>
         </div>
 
+        <div className='project-detail research'>
+          <h2>Research</h2>
+          <h3>User study</h3>
+          <h3>Findings</h3>
+        </div>
+        <div>
+          <h2>Getting Closer to User-centered Design</h2>
+          <h3>Explore users journey map</h3>
+          <h3>Analyse users behavior</h3>
+        </div>
+        <div>
+          <h2>Collaborating with stakeholder</h2>
+          <h3>Clarify responsibilities using Content Map</h3>
+          <h3>Idealization together</h3>
+          <h3>Dealing with technical limitation</h3>
+        </div>
+        <div>
+          <h2>Build navigation</h2>
+          <h3>Refactory the navigationg widget</h3>
+        </div>
+        <div>
+          <h2>Visualizing User-centered Design</h2>
+          <h3>Mobile First Improvement</h3>
+        </div>
+        <div>
+          <h2>Lessons Learned</h2>
+        </div>
+        <div>
+
+        </div>
         <div style={{ paddingTop: "68px" }}>
           <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Coming soon&gt;</h6>
         </div>

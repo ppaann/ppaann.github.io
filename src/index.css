@@ -63,6 +63,12 @@ h1 {
   line-height: 80px;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+}
+
 .project-intr__container {
   display: flex;
   padding: 16px 0;
