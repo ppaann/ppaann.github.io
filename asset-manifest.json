@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b4f46da.css",
-    "main.js": "/static/js/main.43e8a805.js",
+    "main.css": "/static/css/main.9b11053d.css",
+    "main.js": "/static/js/main.77e2a2a4.js",
     "static/media/s24Logo.png": "/static/media/s24Logo.e62011b46d1d70c87be9.png",
     "index.html": "/index.html",
-    "main.7b4f46da.css.map": "/static/css/main.7b4f46da.css.map",
-    "main.43e8a805.js.map": "/static/js/main.43e8a805.js.map"
+    "main.9b11053d.css.map": "/static/css/main.9b11053d.css.map",
+    "main.77e2a2a4.js.map": "/static/js/main.77e2a2a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b4f46da.css",
-    "static/js/main.43e8a805.js"
+    "static/css/main.9b11053d.css",
+    "static/js/main.77e2a2a4.js"
   ]
 }
