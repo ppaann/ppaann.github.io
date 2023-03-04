@@ -15,6 +15,11 @@ const Home = () => {
           engineering</p>
       </article>
 
+      <div style={{ paddingTop: "68px" }}>
+        <h6 style={{ display: "block", margin: "0 auto", width: "400px" }}>&lt;This site is under construction ^_^ &gt;</h6>
+        <h6 style={{ display: "block", margin: "0 auto", width: "400px" }}>&lt;Expect everyday update!&gt;</h6>
+      </div>
+
       <article className='project'>
         <Project />
       </article>

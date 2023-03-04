@@ -75,6 +75,10 @@ h3 {
   line-height: 48px;
 }
 
+b {
+  font-weight: 600;
+}
+
 ol {
   padding-left: 18px;
 }

@@ -1,5 +1,8 @@
 import React from 'react'
 import suomiLogo from '../assets/s24Logo.png'
+import userJounery from "../assets/userjounery.jpeg"
+import userResearch from "../assets/research.jpg"
+import stakeholderMap from "../assets/stakeholderMap.jpeg"
 
 const Project = () => {
   return (
@@ -98,7 +101,7 @@ const Project = () => {
           <div>
             <h3>Problems</h3>
             <div>The number of active users is declining.
-              Suomi24 is not appearing on the first page of Google search results
+              Suomi24 is not appearing on the first page of Google search results.
               Advertisement revenue is not showing a profitable trend.
               The frontend platform being used is no longer being updated.</div>
             <h3>Proposed Solutions</h3>
@@ -114,7 +117,7 @@ const Project = () => {
         <div className='project-detail research'>
           <h2>Research</h2>
           <h3>User study</h3>
-          <p>Our first research focused on real website users. We recruited volunteers from the Suomi24 forum, selecting a diverse range of participants based on age, gender, location, history with Suomi24, and frequency of visits. These participants were invited to participate in a<b> one-on-one user interview</b> and a first-impression test, which helped us gain an in-depth understanding of their feelings about Suomi24. In addition to the interviews, we collected over 200 user responses through an online survey on the forum.  </p>
+          <p>Our first research focused on real website users. We recruited volunteers from the Suomi24 forum, selecting a diverse range of participants based on age, gender, location, history with Suomi24, and frequency of visits. These participants were invited to participate in a<b> one-on-one user interview</b> and a <b>first-impression test</b>, which helped us gain an in-depth understanding of their feelings about Suomi24. In addition to the interviews, we collected over 500 user responses through an <b>online survey</b> on the forum.  </p>
           <h3>Findings</h3>
           <ol>
             <li>The website appears boring and outdated.</li>
@@ -130,14 +133,24 @@ const Project = () => {
           <p>At first glance, it seems that users find the website useful but not interesting. However, upon closer inspection, we found that users have divergent motivations. Creating personas has helped us clarify these divergences, and we can use them as a basis for use cases in later development stages.</p>
           <p>After discussing with the Product Owner and the Business Development team, we have decided to focus on two personas because they represented two user groups: the information seeker and the explorer. The information seeker is someone who visits the website with a specific purpose, seeking knowledge or social approval. On the other hand, the explorer visits the website to relax and doesn't have a specific purpose in mind.
           </p>
+          <div>
+            <img src={userJounery} alt="userJounery" style={{ width: "50%", height: "50%" }} />
+          </div>
           <h3>Analyze User Behavior And Establish Evaluation Targets</h3>
           <p>To gain insight into user behavior, we analyzed data collected from Google Analytics, VWO, and Hotjar. Our analysis focused on where users clicked the most, what was visible in the first three seconds after the page loaded, whether users scrolled to access the information we provided, and whether users found the information relevant and useful.</p>
           <p>Based on our findings, we concluded that it is essential to rearrange the layout to make the most of the first screen. This will enable users to quickly access the information they need and make the website more user-friendly.</p>
           <p>To evaluate the ROI of our redesign, it's crucial to analyze the analytics data. By doing so, we can set up clear targets and adjust our design strategy accordingly.</p>
+
+          <div>
+            <img src={userResearch} alt="User Research" style={{ width: "50%", height: "50%" }} />
+          </div>
         </div>
         <div>
           <h2>Collaborating with stakeholder</h2>
           <h3>Clarify responsibilities using Content Map</h3>
+          <p>Redesigning a website with a long history, such as Suomi24, requires a collaborative effort. The project is dependent on other products, with numerous links, components, and shared APIs. In addition, the marketing and advertisement management team reserves every advertisement on the screen, making it difficult to rearrange them. To clarify responsibilities and the impact of each stakeholder on the redesign work, we collaborated with the product managers, developers, marketing team, and content managers to create a stakeholder map. </p>
+          <img src={stakeholderMap} alt="Stakeholder Map" style={{ width: "50%", height: "50%" }} />
+
           <h3>Idealization together</h3>
           <h3>Dealing with technical limitation</h3>
         </div>
@@ -157,7 +170,7 @@ const Project = () => {
         </div>
         <div style={{ paddingTop: "68px" }}>
           <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;To be continued. &gt;</h6>
-          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 2, 2023&gt;</h6>
+          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 3, 2023&gt;</h6>
 
         </div>
       </div>
