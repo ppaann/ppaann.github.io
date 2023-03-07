@@ -3,6 +3,7 @@ import suomiLogo from '../assets/s24Logo.png'
 import userJounery from "../assets/userjounery.jpeg"
 import userResearch from "../assets/research.jpg"
 import stakeholderMap from "../assets/stakeholderMap.jpeg"
+import threadViewAd from "../assets/threadView_ad_draft.png"
 
 const Project = () => {
   return (
@@ -151,12 +152,19 @@ const Project = () => {
           <p>Redesigning a website with a long history, such as Suomi24, requires a collaborative effort. The project is dependent on other products, with numerous links, components, and shared APIs. In addition, the marketing and advertisement management team reserves every advertisement on the screen, making it difficult to rearrange them. To clarify responsibilities and the impact of each stakeholder on the redesign work, we collaborated with the product managers, developers, marketing team, and content managers to create a stakeholder map. </p>
           <img src={stakeholderMap} alt="Stakeholder Map" style={{ width: "50%", height: "50%" }} />
 
-          <h3>Idealization together</h3>
-          <h3>Dealing with technical limitation</h3>
+          <h3>Usability V.S. Revenue?  Or Both</h3>
+          <div>One of the severe problems found during usability testing and user interviews is that there are too many advertisements, particularly in the thread pages, which is the landing page for more than 97% of users. The irrelevant advertisement image, sometimes resulting in an empty white space when the ad doesn't load successfully. This often disrupts users, and they may leave the page or find it unappealing. However, removing or moving the ad lower down the page is not an option as it is one of our main sources of income and must be visible at the beginning.
+
+          </div>
+          <div> I have redesigned the page in a way that the advertisement is visible in the first place, along with the topic and a portion of the content. The final result was monitored using Google Ad Manager, and both the impression and the reading depth on the page slightly increased.</div>
+          <img src={threadViewAd} alt="Thread view ads" style={{ width: "50%", height: "50%" }} />
+
+
         </div>
         <div>
           <h2>Build navigation</h2>
           <h3>Refactory the navigationg widget</h3>
+          <div>There are many topics hidden deep within deep navigation structure, like pearls buried under sand. To encourage user navigation, we have designed a mega-navigation that includes a search bar, layered navigation items, and a specially designed top area for highlighting important topics.</div>
         </div>
         <div>
           <h2>Visualizing User-centered Design</h2>
@@ -170,7 +178,7 @@ const Project = () => {
         </div>
         <div style={{ paddingTop: "68px" }}>
           <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;To be continued. &gt;</h6>
-          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 3, 2023&gt;</h6>
+          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 6, 2023&gt;</h6>
 
         </div>
       </div>
