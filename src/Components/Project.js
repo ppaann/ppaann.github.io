@@ -8,6 +8,11 @@ import threadViewAd_old from "../assets/threadView_ad_old.png"
 import threadViewAd_new from "../assets/threadView_ad_new.png"
 import home_lo from "../assets/home_lo.png"
 import home_hi from "../assets/home_hi.png"
+import home_ads from "../assets/home_ads.png"
+import design_demo from "../assets/design_demo.png"
+import design_thread from "../assets/design_thread.png"
+import design_wireframe from "../assets/design_wireframe.png"
+import styleguide from "../assets/styleguide.jpg"
 
 
 const Project = () => {
@@ -182,21 +187,50 @@ const Project = () => {
         <div>Create an informative homepage that effectively showcases our brand and drives more traffic to our discussion forum. We worked closely with our content management and marketing teams to redesign the layout, ensuring a balance between informative content and advertisements.</div>
         <img src={home_lo} alt="Homepage-lofi" style={{ width: "40%", height: "50%" }} />
         <img src={home_hi} alt="Homepage-hifi" style={{ paddingLeft: "15%", width: "40%", height: "50%" }} />
+        <img src={home_ads} alt="Homepage ads layout" style={{ width: "20%", height: "50%" }} />
 
 
         <div>
           <h2>Visualizing User-centered Design</h2>
           <h3>Mobile First Improvement</h3>
+          <div>
+            Research indicates that over 74% of Suomi24 page views are from mobile devices, and this number is on the rise. Therefore, we are focusing our efforts on refining the mobile UI.
+            <ol>
+              <li>Ensure text content is visible right away.</li>
+
+              <li>Improve search-ability by making the search feature available in the top navigation widget.</li>
+              <li>Reduce dividers and layer margins in the thread view.</li>
+              <li>Minimize the use of different colors and font sizes.</li>
+              <li>Increase the interaction area by using meaningful icons.</li>
+              <li>Improve the mobile usability of the navigation widget.</li>
+            </ol>
+            <p>We conducted several rounds of testing to ensure smooth and intuitive interactions, as well as a relaxed and effortless UI for mobile users.</p>
+            <img src={design_demo} alt="design demo" style={{ width: "40%", height: "50%" }} />
+            <img src={design_thread} alt="design thread view" style={{ width: "40%", height: "50%" }} />
+            <img src={design_wireframe} alt="wireframe" style={{ width: "40%", height: "50%" }} />
+            <img src={styleguide} alt="styleguide" style={{ height: "400px", paddingLeft: "10%" }} />
+
+
+          </div>
         </div>
         <div>
           <h2>Lessons Learned</h2>
+          <h3>Don’t ditch the old design too soon</h3>
+          <div>
+            <p>We discovered that fewer than 10% of users visit the homepage of suomi24.fi, with most of them navigating to other websites. We wanted to make the homepage more useful so that users could find interesting content and continue their journey inside the forum. With good intentions, we made a significant change to the homepage to provide more helpful information and allow users to use the homepage more effectively.
+            </p>
+            <p>However, our abrupt change replaced the entire old homepage with the new design, resulting in complaints from users. We soon realized that many users used the old homepage as an index, from which they accessed news, mail, and even Google. We acknowledge that this usage of the homepage is valuable, and there is nothing inherently wrong with how users interacted with it. As a result, we reverted back to the original homepage design very quick, and redesign the links.
+            </p>
+            <p>It's important to always keep the user's needs and habits in mind when making changes to a website or application. In this case, it seems like the users had developed a certain behavior and pattern of use for the homepage that was disrupted by the sudden change. It might be worth considering conducting more user research to identify what specific improvements could be made to the homepage to make it more useful without disrupting the user's established patterns of use.
+            </p>
+          </div>
         </div>
         <div>
 
         </div>
         <div style={{ paddingTop: "68px" }}>
-          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;To be continued. &gt;</h6>
-          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 7, 2023&gt;</h6>
+          <h6 style={{ display: "block", margin: "0 auto", width: "500px" }}>&lt;The End Of Story. I will continue to work on updating the styles&gt;</h6>
+          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 8, 2023&gt;</h6>
         </div>
       </div>
     </>
