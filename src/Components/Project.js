@@ -4,6 +4,11 @@ import userJounery from "../assets/userjounery.jpeg"
 import userResearch from "../assets/research.jpg"
 import stakeholderMap from "../assets/stakeholderMap.jpeg"
 import threadViewAd from "../assets/threadView_ad_draft.png"
+import threadViewAd_old from "../assets/threadView_ad_old.png"
+import threadViewAd_new from "../assets/threadView_ad_new.png"
+import home_lo from "../assets/home_lo.png"
+import home_hi from "../assets/home_hi.png"
+
 
 const Project = () => {
   return (
@@ -157,15 +162,28 @@ const Project = () => {
 
           </div>
           <div> I have redesigned the page in a way that the advertisement is visible in the first place, along with the topic and a portion of the content. The final result was monitored using Google Ad Manager, and both the impression and the reading depth on the page slightly increased.</div>
-          <img src={threadViewAd} alt="Thread view ads" style={{ width: "50%", height: "50%" }} />
+          <div>I presented two proposals to let market team choose:
+            <ol>
+              <li>Move the ad beneath the topic and the content of the main thread. When text is too long, clip the text &lt;text-overflow=‘ellipsis’&gt;  to ensure the ad shows more than 50%.</li>
+              <li>Introduce a smaller ad slot for mobile view.</li>
+            </ol>
+            <div>The final result was monitored using Google Ad Manager, and both the impression and the reading depth on the page slightly increased.</div></div>
 
-
+          <img src={threadViewAd_old} alt="Thread view ads" style={{ width: "30%", height: "50%" }} />
+          <img src={threadViewAd} alt="Thread view ads" style={{ width: "30%", height: "50%" }} />
+          <img src={threadViewAd_new} alt="Thread view ads" style={{ width: "30%", height: "50%" }} />
         </div>
         <div>
           <h2>Build navigation</h2>
           <h3>Refactory the navigationg widget</h3>
           <div>There are many topics hidden deep within deep navigation structure, like pearls buried under sand. To encourage user navigation, we have designed a mega-navigation that includes a search bar, layered navigation items, and a specially designed top area for highlighting important topics.</div>
         </div>
+        <h3>Build a information-rich homepage</h3>
+        <div>Create an informative homepage that effectively showcases our brand and drives more traffic to our discussion forum. We worked closely with our content management and marketing teams to redesign the layout, ensuring a balance between informative content and advertisements.</div>
+        <img src={home_lo} alt="Homepage-lofi" style={{ width: "40%", height: "50%" }} />
+        <img src={home_hi} alt="Homepage-hifi" style={{ paddingLeft: "15%", width: "40%", height: "50%" }} />
+
+
         <div>
           <h2>Visualizing User-centered Design</h2>
           <h3>Mobile First Improvement</h3>
@@ -178,8 +196,7 @@ const Project = () => {
         </div>
         <div style={{ paddingTop: "68px" }}>
           <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;To be continued. &gt;</h6>
-          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 6, 2023&gt;</h6>
-
+          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 7, 2023&gt;</h6>
         </div>
       </div>
     </>
