@@ -1,8 +1,9 @@
 import React from 'react'
+import style from './Footer.module.scss'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className={style.footer}>
       <div className='content' style={{
         padding: '5px 0 20px',
         margin: '40px auto',
