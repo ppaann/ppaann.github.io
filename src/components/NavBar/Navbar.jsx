@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import style from './Navbar.module.scss'
 
+//import { styled } from '@emotion/styled';
+
 const Navbar = () => {
   return (
     <>
@@ -10,11 +12,14 @@ const Navbar = () => {
         <Link to="/">
           <h4>Pan Pan</h4>
         </Link>
-        <ul style={{
-          display: 'flex',
-          flexDirection: "column",
-          float: 'right'
-        }}>
+        <Link to='/sandbox' className={style.navItem}>
+          <h6>Sandbox</h6>
+        </Link>
+        <Link to="/about" className={style.navItem}>
+          <h6>About</h6>
+        </Link>
+        {/* 
+        <ul className={style.ul}>
           <li>
             <h6>Email:</h6>
             <a href="mailto:mailbox.pan@gmail.com">mailbox.pan@gmail.com</a>
@@ -27,11 +32,7 @@ const Navbar = () => {
             <h6>Source:</h6>
             <a href="https://github.com/ppaann/ppaann.github.io/">github/ppaann</a>
           </li>
-          <li>
-            <Link to="/about">
-              <h6>About</h6></Link>
-          </li>
-        </ul>
+        </ul>*/}
         <div className="hamburger" >
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
-import Project from '../Components/Project'
+import { Link } from "react-router-dom"
+import S24Project from '../ProjectsPage/S24/S24Project'
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
@@ -27,20 +28,18 @@ const Home = () => {
       `}
       >
         <h1 className='intro'> Hi, my name is <MyName>Pan Pan</MyName>.</h1>
-        <h1>I <DesignText>design</DesignText> and <DevelopText>develop</DevelopText> UX / website / mobile app.</h1>
+        <h1>I <DesignText>design</DesignText> and
+          <Link to='/sandbox'>
+            <DevelopText> develop </DevelopText>
+          </Link>
+          UX / website / mobile app.</h1>
 
         <p className='intro-detail'>I am bridging the gap between design and development.</p>
         <p className='intro-detail'>4+ years UX experience 7+ years of Frontend development, 10+ year of software
           engineering</p>
       </article>
-
-      <div style={{ paddingTop: "68px" }}>
-        <h6 style={{ display: "block", margin: "0 auto", width: "400px" }}>&lt;This site is under construction ^_^ &gt;</h6>
-        <h6 style={{ display: "block", margin: "0 auto", width: "400px" }}>&lt;Expect everyday update!&gt;</h6>
-      </div>
-
       <article className='project'>
-        <Project />
+        <S24Project />
       </article>
     </div>
   )

@@ -1,12 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import "./index.css";
-import Home from './pages/Home';
+import Home from './pages/HomePage/Home';
 import About from './pages/About';
-import Sandbox from "./pages/Sandbox";
+import Sandbox from "./pages/SandboxPages/Sandbox";
 
-import Layout from "./Components/Layout";
+import Layout from "./components/Layouts/Layout";
 
 function App() {
   return (

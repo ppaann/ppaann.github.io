@@ -1,21 +1,21 @@
 import React from 'react'
-import suomiLogo from '../assets/s24Logo.png'
-import userJounery from "../assets/userjounery.jpeg"
-import userResearch from "../assets/research.jpg"
-import stakeholderMap from "../assets/stakeholderMap.jpeg"
-import threadViewAd from "../assets/threadView_ad_draft.png"
-import threadViewAd_old from "../assets/threadView_ad_old.png"
-import threadViewAd_new from "../assets/threadView_ad_new.png"
-import home_lo from "../assets/home_lo.png"
-import home_hi from "../assets/home_hi.png"
-import home_ads from "../assets/home_ads.png"
-import design_demo from "../assets/design_demo.png"
-import design_thread from "../assets/design_thread.png"
-import design_wireframe from "../assets/design_wireframe.png"
-import styleguide from "../assets/styleguide.jpg"
+import suomiLogo from './images/s24Logo.png'
+import userJounery from "./images/userjounery.jpeg"
+import userResearch from "./images/research.jpg"
+import stakeholderMap from "./images/stakeholderMap.jpeg"
+import threadViewAd from "./images/threadView_ad_draft.png"
+import threadViewAd_old from "./images/threadView_ad_old.png"
+import threadViewAd_new from "./images/threadView_ad_new.png"
+import home_lo from "./images/home_lo.png"
+import home_hi from "./images/home_hi.png"
+import home_ads from "./images/home_ads.png"
+import design_demo from "./images/design_demo.png"
+import design_thread from "./images/design_thread.png"
+import design_wireframe from "./images/design_wireframe.png"
+import styleguide from "./images/styleguide.jpg"
 
 
-const Project = () => {
+const S24Project = () => {
   return (
     <>
       <div className='project-container'>
@@ -57,10 +57,10 @@ const Project = () => {
           <div className="project-intro__item myRole">
             <p>My Role</p>
             <div>
-              <ui>
+              <ul>
                 <li>User Experience Designer</li>
                 <li>Frontend Developer</li>
-              </ui>
+              </ul>
 
             </div>
           </div>
@@ -237,4 +237,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default S24Project
