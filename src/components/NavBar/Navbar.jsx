@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import style from './Navbar.module.scss'
 
-//import { styled } from '@emotion/styled';
 
 const Navbar = () => {
   return (

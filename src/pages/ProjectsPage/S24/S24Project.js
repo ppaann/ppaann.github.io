@@ -14,10 +14,20 @@ import design_thread from "./images/design_thread.png"
 import design_wireframe from "./images/design_wireframe.png"
 import styleguide from "./images/styleguide.jpg"
 
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react'
+
+const project_instruction = css`
+  padding-top: 48px;
+  display: flex;
+`
+const project_introduction_desc = css`
+  min-width: 400px;
+`
 
 const S24Project = () => {
   return (
-    <>
+    <article>
       <div className='project-container'>
         <div>
 
@@ -26,10 +36,9 @@ const S24Project = () => {
           </h2>
         </div>
 
-        <div className='project-logo' style={{
-          paddingTop: "48px", display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))"
-        }}>
+        <div css={project_instruction}>
           <div style={{
+            minWidth: '320px',
             display: "flex",
             flexDirection: "column",
             alignItems: "left"
@@ -45,7 +54,7 @@ const S24Project = () => {
               fontWeight: "600"
             }}>Suomi24: What Finns are talking about</p>
           </div>
-          <div>
+          <div css={project_introduction_desc}>
             <p
             >Suomi24.fi is a popular online community in Finland where people can discuss various topics, seek advice, and connect with others.
               It was founded in 2000 and has become one of the largest online forums in Finland.</p>
@@ -230,10 +239,10 @@ const S24Project = () => {
         </div>
         <div style={{ paddingTop: "68px" }}>
           <h6 style={{ display: "block", margin: "0 auto", width: "500px" }}>&lt;The End Of Story. I will continue to work on updating the styles&gt;</h6>
-          <h6 style={{ display: "block", margin: "0 auto", width: "200px" }}>&lt;Last update: Mar, 8, 2023&gt;</h6>
+          <h6 style={{ display: "block", margin: "0 auto", width: "230px" }}>&lt;Last update: May, 18, 2023&gt;</h6>
         </div>
       </div>
-    </>
+    </article>
   )
 }
 
