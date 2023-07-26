@@ -1,42 +1,39 @@
 import React from 'react'
 import style from './Footer.module.scss'
-
+import { Box, Text, HStack, VStack, Icon, Heading, IconButton,Spacer } from '@chakra-ui/react'
+import {FaLinkedin, FaGoogle} from "react-icons/fa"
 const Footer = () => {
   return (
-    <div className={style.footer}>
-      <div className='content' style={{
-        padding: '5px 0 20px',
-        margin: '40px auto',
-        width: '80.77%'
-      }}>
+    <VStack className={style.footer} paddingY='100px'  w='80.77%' marginX='auto' >
+      <Box id='thanks_note'>
+        <Heading>Thank you for reading. Feel free to reach out for any further discussion, feedback or questions.</Heading>
+      </Box>
+      <HStack display={{base:'flex', md:'none'}} pt='32px' w='100%'>
+        <Heading width='60px' as='h6' fontFamily={'Raleway'} size='sm'>
+          Pan Pan</Heading>
+        <Spacer></Spacer>
+        <IconButton aria-label='LindedIn' icon={<FaLinkedin />} />
+        <IconButton aria-label='gmail' icon={<FaGoogle />} />
+      </HStack>
 
-        <div style={{
-          padding: '5px 0 20px',
-          margin: '80px auto 60px'
-        }}>
-          <h1>Thank you for reading. Feel free to reach out for any further discussion, feedback or questions.</h1>
-        </div>
-        <div style={{
-          paddingBottom: '80px',
-        }}>
-          <h4 style={{ fontSize: "25px" }}>Pan Pan</h4>
-          <ul style={{
-            display: 'flex',
-            flexDirection: "column",
-            float: 'right'
-          }}>
-            <li>
-              <h6>Email:</h6>
-              <a href="mailto:mailbox.pan@gmail.com">mailbox.pan@gmail.com</a>
-            </li>
-            <li>
-              <h6>Linkedin:</h6>
-              <a href="https://www.linkedin.com/in/panpanpan/">in/panpanpan</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div >
+      <HStack display={{base:'none', md:'flex'}} w='100%' pt='32px'>
+        <Heading width='60px' as='h6' fontFamily={'Raleway'} size='sm'>
+          Pan Pan
+        </Heading>
+        <Spacer></Spacer>
+        <VStack alignItems='flex-start'>
+          <HStack>
+            <Icon as={FaLinkedin}/> 
+            <Text>Linkedin:</Text> 
+            <a href="mailto:mailbox.pan@gmail.com">mailbox.pan@gmail.com</a>
+          </HStack>
+          <HStack>
+          <Icon as={FaGoogle}/> <Text>Email:</Text>
+            <a href="https://www.linkedin.com/in/panpanpan/">in/panpanpan</a>
+          </HStack>
+        </VStack>
+      </HStack>
+    </VStack>
   )
 }
 

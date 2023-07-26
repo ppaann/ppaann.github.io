@@ -44,3 +44,9 @@ There are long list of things I want to play with style.
 
 ## Sandbox
 ## Projects
+
+
+## Special credit 
+
+[Tampere image, Pasi Jormalainen](https://unsplash.com/photos/6THNtyrXObA)
+[Seattle image, Finn](https://unsplash.com/photos/29ZSbVc_4V0)

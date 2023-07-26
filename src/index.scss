@@ -81,22 +81,6 @@ ol li {
   padding-left: 18px;
 }
 
-.project-intr__container {
-  display: flex;
-  padding: 16px 0;
-  justify-content: space-between;
-}
-
-.project-intro__item {
-  width: 200px;
-  border-top: 1px solid #6E6E6E;
-}
-
-.project-intr__container p {
-  padding: 16px 0;
-  font-weight: 600;
-}
-
 @media all and (max-width: 1200px) {
   article {
     margin: 0 24px;

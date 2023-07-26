@@ -1,31 +1,42 @@
 import React from 'react'
-import { Link } from "react-router-dom"
-import S24Project from '../ProjectsPage/S24/S24Project'
+// import { Link } from "react-router-dom"
+// import S24Project from '../ProjectsPage/S24/S24Project'
+// import Typography from '../../components/Typography/Typography';
 
-import Typography from '../../components/Typography/Typography';
 import Hero from '../../components/Hero/Hero';
+import introUx from '../../assets/intro-ux.jpg';
+import ShowCase from '../../components/ShowCase/ShowCase';
+import introDev from '../../assets/intro-dev.jpg'
+
+import { Box, Flex } from "@chakra-ui/react"
+import HeadLine from '../../components/Headline/HeadLine';
+
 
 const Home = () => {
   return (
-    <div>
+    <Box w='80.77%' m='0 auto'>
+      <Hero></Hero>
 
-      <Hero>
-        <h1 className='intro'> Hi, my name is <Typography.MyName>Pan Pan</Typography.MyName>.</h1>
-        <h1>I <Typography.DesignText>design</Typography.DesignText> and
-          <Link to='/sandbox'>
-            <Typography.DevelopText> develop </Typography.DevelopText>
-          </Link>
-          UX / website / mobile app.</h1>
+      <HeadLine></HeadLine>
 
-        <p className='intro-detail'>I am bridging the gap between design and development.</p>
-        <p className='intro-detail'>5+ years UX experience 7+ years of Frontend development, 10+ year of software
-          engineering</p>
-      </Hero>
+      <Flex gap={'60px'} flexDirection={'column'}>
+        <ShowCase
+          image={introUx}
+          heading='Mastering Frontend Technologies on the Daily!'
+          text='Pan Pan elegantly crafts outstanding sites using modern frontend technologies like HTML, CSS, and JavaScript, leaving no stone unturned.'
+          target='sandbox'
+        />
 
-      <section>
-        <S24Project />
-      </section>
-    </div>
+        <ShowCase
+          revert={true}
+          image={introDev}
+          heading='Transformative UX Design Expert'
+          text='Her exceptional UX skills will sweep you off your feet as she turns the interaction between end-users and digital products into a thing of beauty.'
+          target='ux'
+        />
+
+      </Flex>
+    </Box>
   )
 }
 
