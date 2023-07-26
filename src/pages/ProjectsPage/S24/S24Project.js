@@ -190,7 +190,7 @@ const S24Project = () => {
           <Box position='relative' h={{ base: '200px', md: "360px" }} >
             <Image src={threadViewAd} alt="Thread view ads" w='80%' marginX='auto' h='85%'
               />
-            <Image src={threadViewAd_old} alt="Thread view ads" position='absolute' bottom='0' left='-10px'
+            <Image src={threadViewAd_old} alt="Thread view ads" position='absolute' bottom='0' left='-10px' w='20%'
               display={{ base: 'none', md: 'block' }}
               />
             <Image src={threadViewAd_new} alt="Thread view ads" position='absolute' bottom='0' right='-10px' w='20%'
