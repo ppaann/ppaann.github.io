@@ -26,11 +26,11 @@ const Footer = () => {
           <HStack>
             <Icon as={FaLinkedin}/> 
             <Text>Linkedin:</Text> 
-            <a href="mailto:mailbox.pan@gmail.com">mailbox.pan@gmail.com</a>
+            <a href="https://www.linkedin.com/in/panpanpan/">in/panpanpan</a>
           </HStack>
           <HStack>
           <Icon as={FaGoogle}/> <Text>Email:</Text>
-            <a href="https://www.linkedin.com/in/panpanpan/">in/panpanpan</a>
+            <a href="mailto:mailbox.pan@gmail.com">mailbox.pan@gmail.com</a>
           </HStack>
         </VStack>
       </HStack>
