@@ -24,20 +24,17 @@ const S24Project = () => {
   return (
     <Box maxW='80.77%' marginX='auto'>
 
-      <Box pt={10} position='relative' marginX='auto'
+      <ImageInArticle pt={10} position='relative' marginX='auto'
         w={{ base: '300px', md: '800px' }}
-        h={{ base: '300px', md: '400px' }}
+        h={{ base: '250px', md: '400px' }}
         overflow='hidden'>
-        <Image src={home_desk} h='400px'
-          marginX='auto'
-          boxShadow='11px 23px -5px 0px rgba(0, 0, 0, 0.3)' />
+        <Image src={home_desk} h={{base:'auto', md:'400px'}} w='85%'
+          marginX='auto'/>
         <Image src={home_m} w="15%" position='absolute'
-          bottom='-35px' left='60px'
-          boxShadow='5px -5px 10px 0px rgba(0, 0, 0, 0.3)' />
+          bottom='-5px' left='0'/>
         <Image src={navi_view} position='absolute' h='200px' right='0'
-          top='188px' w='20%'
-          boxShadow='1px 2px 10px 0px rgba(0, 0, 0, 0.3)' />
-      </Box>
+          bottom='-20%' w='20%'/>
+      </ImageInArticle>
 
       <Flex flexDirection={{base: 'column',md:'row'}} pt='120px' pb='120px'>
         <VStack w={{base:'100%', md:'50%'}}>

@@ -6,7 +6,7 @@ const ProjectSummary = ({
   heading = '', description = ''
 }) => {
   return (
-    <Container mt={40} mb={10}>
+    <Container mt={{base:'20', md:'40'}} mb={10}>
 
       <Heading textAlign={'Center'} pb={{ base: 4, md: 6 }}>
 

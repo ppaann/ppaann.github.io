@@ -8,7 +8,6 @@ const UXWorks = () => {
       <ProjectSummary heading='Redesign Suomi24.fi '
         description='Revamping the website for a mordern, mobile-friendly design.' />
 
-
       <S24Project />
     </div>
   )

@@ -1,10 +1,11 @@
 import React from 'react'
-import style from './Footer.module.scss'
 import { Box, Text, HStack, VStack, Icon, Heading, IconButton,Spacer } from '@chakra-ui/react'
 import {FaLinkedin, FaGoogle} from "react-icons/fa"
+
+
 const Footer = () => {
   return (
-    <VStack className={style.footer} paddingY='100px'  w='80.77%' marginX='auto' >
+    <VStack paddingY='100px'  w='80.77%' marginX='auto' >
       <Box id='thanks_note'>
         <Heading>Thank you for reading. Feel free to reach out for any further discussion, feedback or questions.</Heading>
       </Box>
