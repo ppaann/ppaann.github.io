@@ -1,13 +1,14 @@
 import React from 'react'
-import { Box, Text, HStack, VStack, Icon, Heading, IconButton,Spacer } from '@chakra-ui/react'
+import { Box, Text, HStack, VStack, Icon, Heading, IconButton,Spacer, useColorModeValue} from '@chakra-ui/react'
 import {FaLinkedin, FaGoogle} from "react-icons/fa"
 import "./footer.scss"
 
 
 const Footer = () => {
+  const bgColor = useColorModeValue('white', 'gray.800')
   return (
     <VStack  backgroundColor="#0000ff50"   >
-      <Box w='100%'>
+      <Box w='100%' backgroundColor={bgColor}>
       
       <svg
         className="waves" 
@@ -16,17 +17,19 @@ const Footer = () => {
         preserveAspectRatio="none" 
         shapeRendering="auto" 
         viewBox="0 24 150 28"
+        height='150px'
+        width='100%'
       >       
         <defs>
             <path id="gentleWave"
-                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v-44h-352z" />
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         
         <g className="parallax">
-          <use xlinkHref="#gentleWave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-          <use xlinkHref="#gentleWave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-          <use xlinkHref="#gentleWave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-          <use xlinkHref="#gentleWave" x="48" y="7" fill="#fff" />
+          <use xlinkHref="#gentleWave" x="48" y="7" fill="#0000ff20" />
+          <use xlinkHref="#gentleWave" x="48" y="5" fill="#0000ff10" />
+          <use xlinkHref="#gentleWave" x="48" y="3" fill="#0000ff10" />
+          <use xlinkHref="#gentleWave" x="48" y="0" fill="#0000ff10" />
       </g>
       </svg>
       </Box>
