@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?Kanit:wght@600&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@200&family=Tinos&display=swap');
+@import url("https://fonts.googleapis.com/css2?Kanit:wght@600&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@200&family=Tinos&display=swap");
 
 body {
   margin: 0;
   font-size: 16px;
   line-height: 31px;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(242, 242, 242);
-  color: rgba(17, 17, 17)
+  color: rgba(17, 17, 17);
 }
 
 ul,
@@ -18,29 +18,25 @@ li {
   list-style-type: none;
 }
 
-
 article {
   max-width: 1160px;
   margin: 0 auto;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
 
 ul h6 {
   float: left;
   width: 90px;
 }
 
-
 h1 {
   padding: 20px 0 20px;
   font-size: 5em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 80px;
 }
 
@@ -64,9 +60,8 @@ h4 {
 
 h6 {
   font-weight: inherit;
-  color: #6E6E6E;
+  color: #6e6e6e;
 }
-
 
 b {
   font-weight: 600;
@@ -87,12 +82,15 @@ ol li {
   }
 
   h1 {
-    font-size: 4em
+    font-size: 4em;
   }
 }
 
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
   }
 }

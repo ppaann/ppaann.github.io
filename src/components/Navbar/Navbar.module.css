@@ -1,0 +1,14 @@
+.navBar {
+  position: sticky;
+  top: 0;
+  padding-left: 8%;
+  padding-right: 8%;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
+}
+
+.scrolled {
+  background-color: #bcbeff;
+}

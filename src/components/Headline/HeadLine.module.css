@@ -1,0 +1,35 @@
+.headline {
+  min-height: 20rem;
+}
+.intro {
+  padding-right: 5rem;
+  width: 50%;
+}
+
+.headline svg {
+  height: 40px;
+  width: 40px;
+  margin: 0.5rem;
+}
+.img-vwo {
+  height: 40px;
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .headline {
+    text-align: center;
+  }
+  .intro {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  .img-vwo {
+    height: 30px;
+  }
+  .headline svg {
+    height: 30px;
+    width: 30px;
+  }
+}

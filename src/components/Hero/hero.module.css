@@ -1,0 +1,29 @@
+.hero {
+  margin: 20vh 0;
+  padding: 19px 9.615% 22px;
+  margin: 60px auto 60px;
+
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    .info {
+      width: 60%;
+    }
+    .pic {
+      width: 40%;
+    }
+  }
+}
+
+.hero .info {
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.hero .pic {
+  width: 100%;
+}
