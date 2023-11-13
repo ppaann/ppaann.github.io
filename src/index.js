@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.scss";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
 
 import {
@@ -30,11 +28,9 @@ const theme = extendTheme({
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <ChakraProvider theme={theme}>
-      <CSSReset />
-      <ColorModeScript initialColorMode="light"></ColorModeScript>
-      <App />
-    </ChakraProvider>
-  </BrowserRouter>
+  <ChakraProvider theme={theme}>
+    <CSSReset />
+    <ColorModeScript initialColorMode="light"></ColorModeScript>
+    <App />
+  </ChakraProvider>
 );

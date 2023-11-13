@@ -13,7 +13,7 @@ import HeadLine from "../../components/Headline/HeadLine";
 
 const Home = () => {
   return (
-    <Box w="80.77%" m="0 auto" maxWidth="1200px">
+    <>
       <Hero></Hero>
 
       <HeadLine></HeadLine>
@@ -33,7 +33,7 @@ const Home = () => {
           target="ux"
         />
       </Flex>
-    </Box>
+    </>
   );
 };
 

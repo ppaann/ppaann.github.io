@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Link as ReactLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
 
 import { FaSun, FaMoon } from "react-icons/fa";
@@ -9,7 +9,6 @@ import {
   IconButton,
   Spacer,
   useColorMode,
-  Link,
   Heading,
 } from "@chakra-ui/react";
 
@@ -40,6 +39,7 @@ const Navbar = () => {
 
   return (
     <Flex
+      id="nav"
       className={`${classes.navBar} ${isScrolled ? classes.scrolled : ""}`}
       py="5"
       margin="0 auto"
@@ -48,18 +48,24 @@ const Navbar = () => {
       gap="10"
       textDecoration="none"
     >
-      <Link as={ReactLink} w="60px" to="/">
+      <NavLink w="60px" to="/">
         <Heading width="60px" as="h6" fontFamily={"Raleway"} size="sm">
           Pan Pan
         </Heading>
-      </Link>
+      </NavLink>
       <Spacer display={{ base: "none", md: "block" }}></Spacer>
-      <Link as={ReactLink} to="/sandbox">
+      <NavLink
+        to="/sandbox"
+        className={({ isActive }) => isActive && classes.isActive}
+      >
         <h6>Sandbox</h6>
-      </Link>
-      <Link as={ReactLink} to="/ux">
+      </NavLink>
+      <NavLink
+        to="/ux"
+        className={({ isActive }) => isActive && classes.isActive}
+      >
         <h6 style={{ textAlign: "end" }}>UX</h6>
-      </Link>
+      </NavLink>
       <IconButton
         icon={isDark ? <FaSun /> : <FaMoon />}
         isRound="true"

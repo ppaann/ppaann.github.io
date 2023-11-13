@@ -12,3 +12,7 @@
 .scrolled {
   background-color: #bcbeff;
 }
+
+.isActive {
+  font-weight: bolder;
+}

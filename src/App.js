@@ -1,27 +1,44 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-import { } from "@chakra-ui/react";
+import {} from "@chakra-ui/react";
 
-import Home from './pages/HomePage/Home';
+import Home from "./pages/HomePage/Home";
 import Sandbox from "./pages/SandboxPages/Sandbox";
 import UXWorks from "./pages/ProjectsPage/UXWorks";
 import Layout from "./components/Layouts/Layout";
+import ErrorPage from "./pages/ErrorPage";
 
+// This simple app doesn't necessarily use route, but I want to practise the setup here
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "sandbox",
+        element: <Sandbox />,
+      },
+      {
+        path: "ux",
+        element: <UXWorks />,
+      },
+    ],
+    errorElement: <ErrorPage />,
+  },
+]);
 
 function App() {
-  return (
-
-    <div className="mainContainer">
-      <Routes>
-        <Route path='/' element={<Layout />} >
-          <Route path="" element={<Home />} />
-          <Route path="/ux" element={<UXWorks />} />
-          <Route path="/sandbox" element={<Sandbox />} />
-        </Route>
-      </Routes>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
