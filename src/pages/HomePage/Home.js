@@ -8,15 +8,15 @@ import introUx from "../../assets/intro-ux.jpg";
 import ShowCase from "../../components/ShowCase/ShowCase";
 import introDev from "../../assets/intro-dev.jpg";
 
-import { Box, Flex } from "@chakra-ui/react";
-import HeadLine from "../../components/Headline/HeadLine";
+import { Flex } from "@chakra-ui/react";
+import AboutMe from "../../components/AboutMe/AboutMe";
 
 const Home = () => {
   return (
     <>
       <Hero></Hero>
 
-      <HeadLine></HeadLine>
+      <AboutMe></AboutMe>
       <Flex gap={"60px"} flexDirection={"column"}>
         <ShowCase
           image={introUx}

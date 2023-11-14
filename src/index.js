@@ -17,13 +17,13 @@ const theme = extendTheme({
     //heading: `"Instrument Serif", sans-serif`,
     body: `'Raleway', sans-serif`,
   },
-  components: {
-    Container: {
-      baseStyle: {
-        maxW: "80.77%",
-      },
-    },
-  },
+  // components: {
+  //   Container: {
+  //     baseStyle: {
+  //       maxW: "80.77%",
+  //     },
+  //   },
+  // },
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

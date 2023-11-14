@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import {} from "@chakra-ui/react";
 

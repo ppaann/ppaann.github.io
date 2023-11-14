@@ -1,0 +1,83 @@
+.aboutMe {
+  min-height: 20rem;
+
+  & svg {
+    height: 40px;
+    width: 40px;
+    margin: 0.5rem;
+  }
+}
+.intro {
+  padding-right: 5rem;
+  width: 50%;
+}
+
+.img-vwo {
+  height: 40px;
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .headline {
+    text-align: center;
+  }
+  .intro {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  .img-vwo {
+    height: 30px;
+  }
+  .headline svg {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}

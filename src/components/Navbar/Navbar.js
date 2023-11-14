@@ -47,6 +47,7 @@ const Navbar = () => {
       alignItems={"center"}
       gap="10"
       textDecoration="none"
+      as="nav"
     >
       <NavLink w="60px" to="/">
         <Heading width="60px" as="h6" fontFamily={"Raleway"} size="sm">

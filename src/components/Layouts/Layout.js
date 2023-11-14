@@ -1,19 +1,18 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Footer from '../Footer/Footer'
-import Navbar from '../Navbar/Navbar'
-import { Flex } from '@chakra-ui/layout'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 const Layout = () => {
   return (
-    <Flex flexDirection="column">
+    <>
       <Navbar />
-      <Outlet flexGrow="1" />
+      <main>
+        <Outlet flexGrow="1" />
+      </main>
       <Footer />
-    </Flex>
+    </>
+  );
+};
 
-
-  )
-}
-
-export default Layout
+export default Layout;
