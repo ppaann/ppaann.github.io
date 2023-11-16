@@ -84,50 +84,50 @@ export function IconSketch() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M20.6378 32.7693L50.3827 90.6599L0.386902 32.7693H20.6378Z"
         fill="#EA6C00"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M80.136 32.7693L50.3911 90.6599L100.387 32.7693H80.136Z"
         fill="#EA6C00"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M20.6367 32.7693H80.1265L50.3816 90.6599L20.6367 32.7693Z"
         fill="#FDAD00"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M50.3816 0.686279L22.2023 3.64818L20.6367 32.7693L50.3816 0.686279Z"
         fill="#FDD231"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M50.3816 0.686279L78.5609 3.64818L80.1265 32.7693L50.3816 0.686279Z"
         fill="#FDD231"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M100.387 32.7693L78.5704 3.64819L80.136 32.7693H100.387Z"
         fill="#FDAD00"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0.386902 32.7693L22.2033 3.64819L20.6378 32.7693H0.386902Z"
         fill="#FDAD00"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M50.3816 0.686279L20.6367 32.7693H80.1265L50.3816 0.686279Z"
         fill="#FEEEB7"
       />
@@ -290,7 +290,7 @@ export function IconVwo() {
     height="100"
     viewBox="0 0 300 100"
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path
         fill="#BF3078"
         d="M250.498 0c-1.842 0-4.052 0-5.894.367l-10.683 18.7c4.789-2.934 10.683-4.4 16.577-4.4 19.156 0 34.996 15.766 34.996 34.833s-15.84 34.833-34.996 34.833c-19.156 0-34.628-15.4-34.996-34.466l-11.051 18.7C211.818 86.533 229.869 99 250.13 99c27.26 0 49.731-22.367 49.731-49.5C300.23 22.367 277.758 0 250.498 0Z"

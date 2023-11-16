@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  HStack,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, VStack, Wrap } from "@chakra-ui/react";
 import React from "react";
 import {
   IconAnalytics,
@@ -19,7 +12,6 @@ import {
   IconGit,
   IconMongo,
   IconExpress,
-  IconVwo,
 } from "../../assets/icons";
 import classes from "./aboutMe.module.css";
 
@@ -35,7 +27,7 @@ function AboutMe() {
       backgroundColor="purple.200"
     >
       <Flex
-        maxW={["87.5%", "87.5%", "container.lg", "container.xl"]}
+        maxW="87.5%"
         justifyContent="center"
         flexDirection={["column", "column", "row", "row"]}
         mx="auto"
@@ -59,7 +51,7 @@ function AboutMe() {
             <Heading as="h2" size="md">
               Frontend Tools
             </Heading>
-            <HStack>
+            <Wrap>
               <IconReact />
               <IconHtml5 />
               <IconSass />
@@ -67,24 +59,23 @@ function AboutMe() {
               <IconMongo />
               <IconExpress />
               <IconGit />
-            </HStack>
+            </Wrap>
           </VStack>
           <VStack padding-top="8" align={["center", "center", "flex-start"]}>
             <Heading as="h2" size="md">
               UX Tools
             </Heading>
-            <HStack>
+            <Wrap>
               <IconFigma />
               <IconSketch />
               <IconHotjar />
               <IconAnalytics />
-              <IconVwo />
               <img
                 src="https://static.wingify.com/gcp/images/vwo-logo-color.svg"
                 alt="vwo"
                 className={classes["img-vwo"]}
               />
-            </HStack>
+            </Wrap>
           </VStack>
         </Flex>
       </Flex>

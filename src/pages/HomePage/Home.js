@@ -4,11 +4,12 @@ import React from "react";
 // import Typography from '../../components/Typography/Typography';
 
 import Hero from "../../components/Hero/Hero";
-import introUx from "../../assets/intro-ux.jpg";
+// import introUx from "../../assets/intro-ux.jpg";
 import ShowCase from "../../components/ShowCase/ShowCase";
 import introDev from "../../assets/intro-dev.jpg";
+import S24Img from "../ProjectsPage/S24/images/s24-home-desk.png";
 
-import { Flex } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import AboutMe from "../../components/AboutMe/AboutMe";
 
 const Home = () => {
@@ -17,16 +18,32 @@ const Home = () => {
       <Hero></Hero>
 
       <AboutMe></AboutMe>
-      <Flex gap={"60px"} flexDirection={"column"}>
+      <Flex
+        id="projects"
+        gap={"60px"}
+        flexDirection={"column"}
+        pt="20"
+        as="section"
+        className="container"
+      >
+        <Heading
+          textAlign="center"
+          as="h1"
+          size="2xl"
+          fontSize={["32px", "32px", "40px", "48px"]}
+          textTransform={"uppercase"}
+        >
+          Projects
+        </Heading>
         <ShowCase
-          image={introUx}
-          heading="Mastering Frontend Technologies on the Daily!"
-          text="Pan Pan elegantly crafts outstanding sites using modern frontend technologies like HTML, CSS, and JavaScript, leaving no stone unturned."
-          target="sandbox"
+          image={S24Img}
+          heading="Redesign Suomi24.fi"
+          text="Lead the redesign of Suomi24.fi, the largest Finnish online discussion forumcatering to a vibrant community of 1.4 million weekly users. \nAs a UX designer, I enhanced the UX by revamping its layout and look and feel, with a focus on improving information accessibility and ensuring seamless mobile usability. \nAs an engineer,I modernized the frontend codebase, transitioned it from FlightJS to the more efficient and versatile React framework."
+          liveLink="https://www.suomi24.fi"
+          designLink="ux"
         />
 
         <ShowCase
-          revert={true}
           image={introDev}
           heading="Transformative UX Design Expert"
           text="Her exceptional UX skills will sweep you off your feet as she turns the interaction between end-users and digital products into a thing of beauty."

@@ -1,7 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import {} from "@chakra-ui/react";
+import "./styles.css";
 
 import Home from "./pages/HomePage/Home";
 import Sandbox from "./pages/SandboxPages/Sandbox";

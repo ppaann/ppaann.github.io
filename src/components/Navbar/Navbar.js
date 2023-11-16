@@ -57,13 +57,13 @@ const Navbar = () => {
       <Spacer display={{ base: "none", md: "block" }}></Spacer>
       <NavLink
         to="/sandbox"
-        className={({ isActive }) => isActive && classes.isActive}
+        className={({ isActive }) => (isActive ? "" : classes.isActive)}
       >
         <h6>Sandbox</h6>
       </NavLink>
       <NavLink
         to="/ux"
-        className={({ isActive }) => isActive && classes.isActive}
+        className={({ isActive }) => (isActive ? "" : classes.isActive)}
       >
         <h6 style={{ textAlign: "end" }}>UX</h6>
       </NavLink>
