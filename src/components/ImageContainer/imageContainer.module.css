@@ -1,0 +1,97 @@
+.imageContainer {
+  max-width: 1280px;
+  position: relative;
+  min-height: 470px;
+  max-height: 500px;
+  margin: 0 auto;
+  & div {
+    box-shadow: 2px 2px 5px 1px #00000033;
+    max-height: 66%;
+    overflow: hidden;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+  }
+}
+
+.left {
+  position: absolute;
+  max-width: 15%;
+  left: 20%;
+  top: 20%;
+  animation-name: fade-in_left;
+}
+.mid {
+  position: absolute;
+  top: 0;
+  max-width: 80%;
+  max-height: 80%;
+  left: 50%;
+  animation-name: fade-in_top;
+}
+
+.right {
+  position: absolute;
+  left: 80%;
+  top: 20%;
+  transform: translate(-50%);
+  max-width: 15%;
+  animation-name: fade-in_right;
+}
+
+.half-left {
+  width: 45%;
+}
+.half-right {
+  padding: 5%;
+  width: 45%;
+}
+
+@keyframes fade-in_left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fade-in_top {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fade-in_right {
+  0% {
+    opacity: 0;
+    transform: translate3d(-30px, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 48em) {
+  .hideWhenSmall {
+    display: none;
+  }
+  .mid {
+    width: 80%;
+  }
+  .imageContainer {
+    min-height: 300px;
+  }
+  [class^="half-"] {
+    max-width: 87%;
+  }
+}

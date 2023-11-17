@@ -4,3 +4,29 @@
   padding-right: 15px;
   margin: 0 auto;
 }
+
+article section {
+  padding-top: 4em;
+  section {
+    padding-top: 2em;
+  }
+}
+
+h1,
+h2,
+h3 {
+  padding: 1em 0;
+}
+
+ul {
+  list-style: none;
+}
+ol {
+  padding-left: 1em;
+}
+
+a,
+p,
+li {
+  font-size: 1.6rem;
+}

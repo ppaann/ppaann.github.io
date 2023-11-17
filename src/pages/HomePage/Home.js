@@ -45,7 +45,7 @@ const Home = () => {
 
         <ShowCase
           image={introDev}
-          heading="Transformative UX Design Expert"
+          heading="Professional Dancer "
           text="Her exceptional UX skills will sweep you off your feet as she turns the interaction between end-users and digital products into a thing of beauty."
           target="ux"
         />
