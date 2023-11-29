@@ -1,5 +1,9 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  ScrollRestoration,
+} from "react-router-dom";
 import "./styles.css";
 
 import Home from "./pages/HomePage/Home";
@@ -29,10 +33,16 @@ const router = createBrowserRouter([
     ],
     errorElement: <ErrorPage />,
   },
+
+  { path: "/", element: <ScrollRestoration /> },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <RouterProvider router={router} />
+    //   <ScrollRestoration />
+    // </RouterProvider>
+  );
 }
 
 export default App;

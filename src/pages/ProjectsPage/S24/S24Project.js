@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import suomiLogo from "./images/s24Logo.png";
 import userJounery from "./images/userjounery.jpeg";
 import userResearch from "./images/research.jpg";
@@ -31,6 +31,9 @@ import ImageInArticle from "../../../components/ImageInArticle";
 import ImageContainer from "../../../components/ImageContainer/ImageContainer";
 
 const S24Project = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Container id="header-image" maxW="container.xl">
@@ -99,55 +102,49 @@ const S24Project = () => {
             <Text pt="4" fontWeight={"600"}>
               My Role
             </Text>
-            <p>
-              <ul>
-                <li>User Experience Designer</li>
-                <li>Frontend Developer</li>
-              </ul>
-            </p>
+            <ul>
+              <li>User Experience Designer</li>
+              <li>Frontend Developer</li>
+            </ul>
           </Box>
           <Box w="200px" borderTop={"1px solid #6e6e6e"}>
             <Text pt="4" fontWeight={"600"}>
               {" "}
               Deliverables
             </Text>
-            <p>
-              <p>UX</p>
-              <ul>
-                <li>User survey and interview</li>
-                <li>User jounery map</li>
-                <li>Stakeholder map</li>
-                <li>Personas</li>
-                <li>Site map</li>
-                <li>Navigation Design</li>
-                <li>Search Engine Optimization</li>
-              </ul>
-              <Text pt="4" fontWeight={"600"}>
-                Frontend
-              </Text>
-              <ul>
-                <li>React component library</li>
-                <li>Unit testing</li>
-              </ul>
-            </p>
+            <p>UX</p>
+            <ul>
+              <li>User survey and interview</li>
+              <li>User jounery map</li>
+              <li>Stakeholder map</li>
+              <li>Personas</li>
+              <li>Site map</li>
+              <li>Navigation Design</li>
+              <li>Search Engine Optimization</li>
+            </ul>
+            <Text pt="4" fontWeight={"600"}>
+              Frontend
+            </Text>
+            <ul>
+              <li>React component library</li>
+              <li>Unit testing</li>
+            </ul>
           </Box>
           <Box w="200px" borderTop={"1px solid #6e6e6e"}>
             <Text pt="4" fontWeight={"600"}>
               Tools
             </Text>
-            <div>
-              <ul>
-                <li>Sketch</li>
-                <li>Figma</li>
-                <li>Balsamiq</li>
-                <li>VWO</li>
-                <li>Hotjar</li>
-                <li>google Analytics</li>
-                <li>Google Tag Manager</li>
-                <li>React</li>
-                <li>Javascript/CSS/HTML</li>
-              </ul>
-            </div>
+            <ul>
+              <li>Sketch</li>
+              <li>Figma</li>
+              <li>Balsamiq</li>
+              <li>VWO</li>
+              <li>Hotjar</li>
+              <li>google Analytics</li>
+              <li>Google Tag Manager</li>
+              <li>React</li>
+              <li>Javascript/CSS/HTML</li>
+            </ul>
           </Box>
         </Flex>
       </Container>
@@ -354,22 +351,21 @@ const S24Project = () => {
           The final result was monitored using Google Ad Manager, and both the
           impression and the reading depth on the page slightly increased.
         </p>
+        <p>I presented two proposals to let market team choose:</p>
+        <ol>
+          <li>
+            Move the ad beneath the topic and the content of the main thread.
+            When text is too long, clip the text
+            &lt;text-overflow=‘ellipsis’&gt; to ensure the ad shows more than
+            50%.
+          </li>
+          <li>Introduce a smaller ad slot for mobile view.</li>
+        </ol>
         <p>
-          I presented two proposals to let market team choose:
-          <ol>
-            <li>
-              Move the ad beneath the topic and the content of the main thread.
-              When text is too long, clip the text
-              &lt;text-overflow=‘ellipsis’&gt; to ensure the ad shows more than
-              50%.
-            </li>
-            <li>Introduce a smaller ad slot for mobile view.</li>
-          </ol>
-          <p>
-            The final result was monitored using Google Ad Manager, and both the
-            impression and the reading depth on the page slightly increased.
-          </p>
+          The final result was monitored using Google Ad Manager, and both the
+          impression and the reading depth on the page slightly increased.
         </p>
+
         <ImageInArticle description="Improve ad display in the thread view">
           <Box position="relative" h={{ base: "200px", md: "360px" }}>
             <Image
@@ -445,19 +441,17 @@ const S24Project = () => {
 
         <Flex gap="5%" flexWrap="wrap">
           <Box w={{ base: "100%", md: "50%" }} minWidth="350px">
-            <p>
-              <Text>
-                Advertisement as one of the most important revenue resourse must
-                graps much user attention from the page.
-              </Text>
-              <Text pt="15px">
-                We not only need to provide informative ads that are relevent to
-                user's need, but also we need to place the ads propertly in
-                proper spot and frequency, so that it can keep the balance
-                between user experience and revenue
-              </Text>
-              <Text></Text>
-            </p>
+            <Text>
+              Advertisement as one of the most important revenue resourse must
+              graps much user attention from the page.
+            </Text>
+            <Text pt="15px">
+              We not only need to provide informative ads that are relevent to
+              user's need, but also we need to place the ads propertly in proper
+              spot and frequency, so that it can keep the balance between user
+              experience and revenue
+            </Text>
+            <Text></Text>
           </Box>
           <Image
             src={home_ads}
@@ -479,104 +473,103 @@ const S24Project = () => {
           Research indicates that over 74% of Suomi24 page views are from mobile
           devices, and this number is on the rise. Therefore, we are focusing
           our efforts on refining the mobile UI.
-          <ol>
-            <li>Ensure text content is visible right away.</li>
-
-            <li>
-              Improve search-ability by making the search feature available in
-              the top navigation widget.
-            </li>
-            <li>Reduce dividers and layer margins in the thread view.</li>
-            <li>Minimize the use of different colors and font sizes.</li>
-            <li>Increase the interaction area by using meaningful icons.</li>
-            <li>Improve the mobile usability of the navigation widget.</li>
-          </ol>
-          <p>
-            We conducted several rounds of testing to ensure smooth and
-            intuitive interactions, as well as a relaxed and effortless UI for
-            mobile users.
-          </p>
-          <ImageInArticle description="The mockups and style guides">
-            <Box position="relative" display={{ base: "none", md: "block" }}>
-              <Image
-                src={design_demo}
-                alt="design demo"
-                width="80%"
-                position="relative"
-                marginX="auto"
-              />
-
-              <Image
-                src={design_wireframe}
-                alt="wireframe"
-                width="50%"
-                position="absolute"
-                bottom="0"
-                left="45%"
-              />
-              <Image
-                src={styleguide}
-                alt="styleguide"
-                height="450px"
-                position="absolute"
-                bottom="0"
-                right="0"
-              />
-              <Image
-                src={design_thread}
-                alt="design thread view"
-                position="absolute"
-                bottom="0"
-                width="50%"
-              />
-            </Box>
-            <Flex
-              display={{ base: "flex", md: "none" }}
-              flexWrap="wrap"
-              gap="12px"
-              sx={{
-                div: {
-                  borderRadius: "xl",
-                  boxShadow: "2px 2px 5px 1px rgba(0,0,0,0.2)",
-                },
-              }}
-            >
-              <Box
-                minWidth="350px"
-                maxWidth="450px"
-                h="450px"
-                backgroundImage={design_demo}
-                backgroundPosition="center"
-                backgroundRepeat="no-repeat"
-              ></Box>
-              <Box
-                minWidth="350px"
-                maxWidth="450px"
-                h="450px"
-                backgroundImage={design_wireframe}
-                backgroundPosition="right"
-                backgroundRepeat="no-repeat"
-              ></Box>
-              <Box
-                minWidth="350px"
-                maxWidth="450px"
-                h="450px"
-                backgroundImage={design_thread}
-                backgroundPosition="revert"
-                backgroundRepeat="no-repeat"
-              ></Box>
-              <Box
-                minWidth="350px"
-                maxWidth="450px"
-                h="450px"
-                backgroundImage={styleguide}
-                backgroundPosition="revert"
-                backgroundRepeat="no-repeat"
-                backgroundSize="50%"
-              ></Box>
-            </Flex>
-          </ImageInArticle>
         </p>
+        <ol>
+          <li>Ensure text content is visible right away.</li>
+
+          <li>
+            Improve search-ability by making the search feature available in the
+            top navigation widget.
+          </li>
+          <li>Reduce dividers and layer margins in the thread view.</li>
+          <li>Minimize the use of different colors and font sizes.</li>
+          <li>Increase the interaction area by using meaningful icons.</li>
+          <li>Improve the mobile usability of the navigation widget.</li>
+        </ol>
+        <p>
+          We conducted several rounds of testing to ensure smooth and intuitive
+          interactions, as well as a relaxed and effortless UI for mobile users.
+        </p>
+        <ImageInArticle description="The mockups and style guides">
+          <Box position="relative" display={{ base: "none", md: "block" }}>
+            <Image
+              src={design_demo}
+              alt="design demo"
+              width="80%"
+              position="relative"
+              marginX="auto"
+            />
+
+            <Image
+              src={design_wireframe}
+              alt="wireframe"
+              width="50%"
+              position="absolute"
+              bottom="0"
+              left="45%"
+            />
+            <Image
+              src={styleguide}
+              alt="styleguide"
+              height="450px"
+              position="absolute"
+              bottom="0"
+              right="0"
+            />
+            <Image
+              src={design_thread}
+              alt="design thread view"
+              position="absolute"
+              bottom="0"
+              width="50%"
+            />
+          </Box>
+          <Flex
+            display={{ base: "flex", md: "none" }}
+            flexWrap="wrap"
+            gap="12px"
+            sx={{
+              div: {
+                borderRadius: "xl",
+                boxShadow: "2px 2px 5px 1px rgba(0,0,0,0.2)",
+              },
+            }}
+          >
+            <Box
+              minWidth="350px"
+              maxWidth="450px"
+              h="450px"
+              backgroundImage={design_demo}
+              backgroundPosition="center"
+              backgroundRepeat="no-repeat"
+            ></Box>
+            <Box
+              minWidth="350px"
+              maxWidth="450px"
+              h="450px"
+              backgroundImage={design_wireframe}
+              backgroundPosition="right"
+              backgroundRepeat="no-repeat"
+            ></Box>
+            <Box
+              minWidth="350px"
+              maxWidth="450px"
+              h="450px"
+              backgroundImage={design_thread}
+              backgroundPosition="revert"
+              backgroundRepeat="no-repeat"
+            ></Box>
+            <Box
+              minWidth="350px"
+              maxWidth="450px"
+              h="450px"
+              backgroundImage={styleguide}
+              backgroundPosition="revert"
+              backgroundRepeat="no-repeat"
+              backgroundSize="50%"
+            ></Box>
+          </Flex>
+        </ImageInArticle>
       </Container>
       <Container id="recap" as="section" maxW="container.xl">
         <Heading as="h2" size="xl">

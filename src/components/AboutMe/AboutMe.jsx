@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, VStack, Wrap } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, VStack, Wrap } from "@chakra-ui/react";
 import React from "react";
 import {
   IconAnalytics,
@@ -12,6 +12,7 @@ import {
   IconGit,
   IconMongo,
   IconExpress,
+  IconAngular,
 } from "../../assets/icons";
 import classes from "./aboutMe.module.css";
 
@@ -27,7 +28,7 @@ function AboutMe() {
       backgroundColor="purple.200"
     >
       <Flex
-        maxW="87.5%"
+        maxW="container.xl"
         justifyContent="center"
         flexDirection={["column", "column", "row", "row"]}
         mx="auto"
@@ -38,13 +39,24 @@ function AboutMe() {
             size="2xl"
             fontSize={["32px", "32px", "40px", "48px"]}
             pb="5"
+            pt="0"
           >
             About me
           </Heading>
-          <b>
-            I'm a Frontend Developer and UX Designer. My goal is to deliver
-            top-notch user experiences through structured, reusable code.
-          </b>
+          <Box>
+            <Text>
+              Hello! I'm Pan Pan, a Frontend Developer and UX Designer with a
+              truly global perspective. Originally from China, my career journey
+              began in Finland and has since brought me to the United States.
+            </Text>
+            <Text pt="1.5em">
+              Passionate about crafting seamless user experiences, I blend
+              innovative design with clean, efficient code to bring digital
+              visions to life. My work is where aesthetics meet functionality,
+              creating interfaces that are not only visually appealing but also
+              user-friendly and intuitive.
+            </Text>
+          </Box>
         </Box>
         <Flex flexDirection="column" gap="4">
           <VStack align={["center", "center", "flex-start"]}>
@@ -53,6 +65,7 @@ function AboutMe() {
             </Heading>
             <Wrap>
               <IconReact />
+              <IconAngular />
               <IconHtml5 />
               <IconSass />
               <IconNodeExpress />

@@ -20,7 +20,7 @@ const Home = () => {
       <AboutMe></AboutMe>
       <Flex
         id="projects"
-        gap={"60px"}
+        gap={{ base: "40px", md: "6em" }}
         flexDirection={"column"}
         pt="20"
         as="section"
@@ -38,7 +38,7 @@ const Home = () => {
         <ShowCase
           image={S24Img}
           heading="Redesign Suomi24.fi"
-          text="Lead the redesign of Suomi24.fi, the largest Finnish online discussion forumcatering to a vibrant community of 1.4 million weekly users. \nAs a UX designer, I enhanced the UX by revamping its layout and look and feel, with a focus on improving information accessibility and ensuring seamless mobile usability. \nAs an engineer,I modernized the frontend codebase, transitioned it from FlightJS to the more efficient and versatile React framework."
+          text="Lead the redesign of Suomi24.fi, the largest Finnish online discussion forumcatering to a vibrant community of 1.4 million weekly users. \nUX: Revamping the layout and look and feel, improved information accessibility and mobile usability. \nFrontend: I modernized the frontend codebase, transitioned it from FlightJS to React framework."
           liveLink="https://www.suomi24.fi"
           designLink="ux"
         />

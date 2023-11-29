@@ -19,17 +19,20 @@ const ShowCase = ({
   sourceLink = "",
 }) => {
   const textWithLineBreaks = text.replace(/\\n/g, "\n\n");
+
   return (
     <Flex
       md="8"
-      gap={{ base: "40px", md: "8em" }}
+      gap={{ base: "40px", md: "4em" }}
       flexDirection={{ base: "column", md: "row" }}
     >
       <Box flexBasis="33%">
         <Heading pb="5" fontWeight="normal" fontSize="32">
           {heading}
         </Heading>
-        <Text whiteSpace="pre-line">{textWithLineBreaks}</Text>
+        <Text whiteSpace="pre-line" fontSize="md">
+          {textWithLineBreaks}
+        </Text>
         <Heading as="h4" fontSize={"xs"} color={"purple.500"} mt={4}>
           Role: UX designer, Frontend Developer
         </Heading>
