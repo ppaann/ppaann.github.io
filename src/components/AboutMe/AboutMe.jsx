@@ -24,7 +24,7 @@ function AboutMe() {
       pt="28"
       pb="20"
       className={classes.aboutMe}
-      minH="50vh"
+      minH="35vh"
       backgroundColor="purple.200"
     >
       <Flex

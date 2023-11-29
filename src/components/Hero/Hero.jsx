@@ -17,7 +17,12 @@ const Hero = ({ children }) => {
     }
   };
   return (
-    <Center id="hero" h="100vh" as="section">
+    <Center
+      id="hero"
+      h="100vh"
+      as="section"
+      paddingTop={{ base: "-50px", md: "-100px" }}
+    >
       <Center maxW="container.xl" className={classes.hero} w="container.lg">
         <div className={classes.info}>
           <Heading mb="2">Hi, My name is Pan Pan</Heading>

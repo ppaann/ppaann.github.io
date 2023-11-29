@@ -578,35 +578,33 @@ const S24Project = () => {
         <Heading as="h3" size="lg">
           Don’t ditch the old design too soon
         </Heading>
+
         <p>
-          <p>
-            We discovered that fewer than 10% of users visit the homepage of
-            suomi24.fi, with most of them navigating to other websites. We
-            wanted to make the homepage more useful so that users could find
-            interesting content and continue their journey inside the forum.
-            With good intentions, we made a significant change to the homepage
-            to provide more helpful information and allow users to use the
-            homepage more effectively.
-          </p>
-          <p>
-            However, our abrupt change replaced the entire old homepage with the
-            new design, resulting in complaints from users. We soon realized
-            that many users used the old homepage as an index, from which they
-            accessed news, mail, and even Google. We acknowledge that this usage
-            of the homepage is valuable, and there is nothing inherently wrong
-            with how users interacted with it. As a result, we reverted back to
-            the original homepage design very quick, and redesign the links.
-          </p>
-          <p>
-            It's important to always keep the user's needs and habits in mind
-            when making changes to a website or application. In this case, it
-            seems like the users had developed a certain behavior and pattern of
-            use for the homepage that was disrupted by the sudden change. It
-            might be worth considering conducting more user research to identify
-            what specific improvements could be made to the homepage to make it
-            more useful without disrupting the user's established patterns of
-            use.
-          </p>
+          We discovered that fewer than 10% of users visit the homepage of
+          suomi24.fi, with most of them navigating to other websites. We wanted
+          to make the homepage more useful so that users could find interesting
+          content and continue their journey inside the forum. With good
+          intentions, we made a significant change to the homepage to provide
+          more helpful information and allow users to use the homepage more
+          effectively.
+        </p>
+        <p>
+          However, our abrupt change replaced the entire old homepage with the
+          new design, resulting in complaints from users. We soon realized that
+          many users used the old homepage as an index, from which they accessed
+          news, mail, and even Google. We acknowledge that this usage of the
+          homepage is valuable, and there is nothing inherently wrong with how
+          users interacted with it. As a result, we reverted back to the
+          original homepage design very quick, and redesign the links.
+        </p>
+        <p>
+          It's important to always keep the user's needs and habits in mind when
+          making changes to a website or application. In this case, it seems
+          like the users had developed a certain behavior and pattern of use for
+          the homepage that was disrupted by the sudden change. It might be
+          worth considering conducting more user research to identify what
+          specific improvements could be made to the homepage to make it more
+          useful without disrupting the user's established patterns of use.
         </p>
       </Container>
     </>
