@@ -47,6 +47,7 @@ const Home = () => {
           image={introDev}
           heading="Professional Dancer "
           text="Her exceptional UX skills will sweep you off your feet as she turns the interaction between end-users and digital products into a thing of beauty."
+          liveLink="https://vivianpoledance.vercel.app/"
           target="ux"
         />
       </Flex>
