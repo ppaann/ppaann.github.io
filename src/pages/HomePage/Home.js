@@ -6,7 +6,7 @@ import React from "react";
 import Hero from "../../components/Hero/Hero";
 // import introUx from "../../assets/intro-ux.jpg";
 import ShowCase from "../../components/ShowCase/ShowCase";
-import introDev from "../../assets/intro-dev.jpg";
+import introDev from "../../assets/vivian_dance.png";
 import S24Img from "../ProjectsPage/S24/images/s24-home-desk.png";
 
 import { Flex, Heading } from "@chakra-ui/react";
@@ -15,14 +15,14 @@ import AboutMe from "../../components/AboutMe/AboutMe";
 const Home = () => {
   return (
     <>
-      <Hero></Hero>
+      <Hero />
 
       <AboutMe></AboutMe>
       <Flex
         id="projects"
-        gap={{ base: "40px", md: "6em" }}
+        gap={{ base: "40px", md: "5em" }}
         flexDirection={"column"}
-        pt="20"
+        py="20"
         as="section"
         className="container"
       >
