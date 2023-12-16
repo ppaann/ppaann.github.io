@@ -40,7 +40,7 @@ const Home = () => {
           heading="Redesign Suomi24.fi"
           text="Lead the redesign of Suomi24.fi, the largest Finnish online discussion forumcatering to a vibrant community of 1.4 million weekly users. \nUX: Revamping the layout and look and feel, improved information accessibility and mobile usability. \nFrontend: I modernized the frontend codebase, transitioned it from FlightJS to React framework."
           liveLink="https://www.suomi24.fi"
-          designLink="ux"
+          designLink="ux-s24"
         />
 
         <ShowCase
@@ -48,7 +48,7 @@ const Home = () => {
           heading="Professional Dancer "
           text="Her exceptional UX skills will sweep you off your feet as she turns the interaction between end-users and digital products into a thing of beauty."
           liveLink="https://vivianpoledance.vercel.app/"
-          target="ux"
+          designLink="ux-dancer"
         />
       </Flex>
     </>

@@ -1,8 +1,8 @@
 import React from "react";
-import ProjectSummary from "../../components/ProjectSummary/Projectsummary";
-import S24Project from "./S24/S24Project";
+import ProjectSummary from "../../../components/ProjectSummary/Projectsummary";
+import S24Project from "./S24Project";
 
-const UXWorks = () => {
+const S24UXWorks = () => {
   return (
     <article>
       <ProjectSummary
@@ -15,4 +15,4 @@ const UXWorks = () => {
   );
 };
 
-export default UXWorks;
+export default S24UXWorks;
