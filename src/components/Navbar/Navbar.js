@@ -42,6 +42,7 @@ const Navbar = () => {
     <Box
       id="nav"
       as="nav"
+      backgroundColor="#0000ff50"
       className={`${classes.navBar} ${isScrolled ? classes.scrolled : ""}`}
     >
       <Flex
@@ -66,12 +67,12 @@ const Navbar = () => {
       >
         <h6>Sandbox</h6>
       </NavLink> */}
-        <NavLink
+        {/* <NavLink
           to="/ux"
           className={({ isActive }) => (isActive ? "" : classes.isActive)}
         >
           <h6 style={{ textAlign: "end" }}>UX</h6>
-        </NavLink>
+        </NavLink> */}
         <IconButton
           icon={isDark ? <FaSun /> : <FaMoon />}
           isRound="true"

@@ -76,6 +76,7 @@ const ShowCase = ({
               colorScheme="purple"
               variant="link"
               _hover={{ shadow: "lg" }}
+              pl="4"
             >
               Source
             </Button>

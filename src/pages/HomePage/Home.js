@@ -46,9 +46,10 @@ const Home = () => {
         <ShowCase
           image={introDev}
           heading="Professional Dancer "
-          text="Her exceptional UX skills will sweep you off your feet as she turns the interaction between end-users and digital products into a thing of beauty."
+          text="Design and implement a professional website for a pole dancer. \nUX: Plan and Design with the client. \nFrontend: NextJs, React, Tailwindcss"
           liveLink="https://vivianpoledance.vercel.app/"
           designLink="ux-dancer"
+          sourceLink="https://github.com/ppaann/vivian.pole.dance.app"
         />
       </Flex>
     </>
