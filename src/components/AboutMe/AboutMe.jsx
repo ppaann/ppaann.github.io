@@ -16,7 +16,10 @@ import {
 } from "../../assets/icons";
 import classes from "./aboutMe.module.css";
 
+import { useColorModeValue } from "@chakra-ui/react";
+
 function AboutMe() {
+  const value = useColorModeValue("purple.200", "purple.700");
   return (
     <Box
       id="about"
@@ -25,7 +28,7 @@ function AboutMe() {
       pb="20"
       className={classes.aboutMe}
       minH="35vh"
-      backgroundColor="purple.200"
+      backgroundColor={value}
     >
       <Flex
         maxW="container.xl"

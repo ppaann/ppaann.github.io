@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
 
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaSun, FaMoon, FaDownload } from "react-icons/fa";
 import {
   Flex,
   IconButton,
@@ -11,6 +11,7 @@ import {
   useColorMode,
   Heading,
   Box,
+  Button,
 } from "@chakra-ui/react";
 
 const Navbar = () => {
@@ -42,7 +43,7 @@ const Navbar = () => {
     <Box
       id="nav"
       as="nav"
-      backgroundColor="#0000ff50"
+      backgroundColor={isDark ? "purple.700" : "purple.200"}
       className={`${classes.navBar} ${isScrolled ? classes.scrolled : ""}`}
     >
       <Flex
@@ -73,7 +74,21 @@ const Navbar = () => {
         >
           <h6 style={{ textAlign: "end" }}>UX</h6>
         </NavLink> */}
+        <a
+          href="../../../public/Pan_Frontend.pdf"
+          download="Pan_UX_Developer.pdf"
+        >
+          <Button
+            colorScheme="purple"
+            variant="outline"
+            rightIcon={<FaDownload />}
+          >
+            Download My Resume
+          </Button>
+        </a>
         <IconButton
+          colorScheme="purple"
+          variant="outline"
           icon={isDark ? <FaSun /> : <FaMoon />}
           isRound="true"
           onClick={toggleColorMode}

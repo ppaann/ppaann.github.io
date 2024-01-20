@@ -14,10 +14,11 @@ import { FaLinkedin, FaGoogle } from "react-icons/fa";
 import "./footer.scss";
 
 const Footer = () => {
-  const bgColor = useColorModeValue("white", "gray.800");
+  const value = useColorModeValue("purple.200", "purple.700");
+
   return (
-    <VStack backgroundColor="#0000ff50" as="footer">
-      <Box w="100%" backgroundColor={bgColor}>
+    <VStack backgroundColor={value} as="footer">
+      {/* <Box w="100%" backgroundColor={bgColor}>
         <svg
           className="waves"
           xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +43,7 @@ const Footer = () => {
             <use xlinkHref="#gentleWave" x="48" y="0" fill="#0000ff10" />
           </g>
         </svg>
-      </Box>
+      </Box> */}
       <VStack paddingY="100px" w="80.77%" marginX="auto">
         <Box id="thanks_note">
           <Heading>
