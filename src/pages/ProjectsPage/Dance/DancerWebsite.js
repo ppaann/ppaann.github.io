@@ -1,7 +1,9 @@
 import React from "react";
 import Section from "../../../components/Section/Section";
-import { Container, Heading, Progress, Text } from "@chakra-ui/react";
+import { Center, Container, Heading, Text } from "@chakra-ui/react";
 import ProjectSummary from "../../../components/ProjectSummary/Projectsummary";
+
+import NoteArea from "../../../components/NoteArea/NoteArea";
 
 const DancerWebsite = () => {
   return (
@@ -12,19 +14,14 @@ const DancerWebsite = () => {
           description="The design thinking in Vivian's website, a Biochemistry Post-Doc turned pole dance trainer. "
         />
 
-        <Section>
-          <Heading as="h5" textAlign={"Center"}>
-            Greetings!
-            <Text fontSize="xl">
-              Please be advised that I am currently hard at work refining this
-              article.
-              <br />
-              You are perusing a MVP eidtion, which offers you a glimpse into
-              the inner workings of my design process.
-            </Text>
-            <Progress size="xs" isIndeterminate />
-          </Heading>
-        </Section>
+        <Center>
+          <NoteArea
+            title="Greetings!"
+            content="Please be advised that I am currently hard at work refining this
+              article. \nYou are perusing a MVP eidtion, which offers you a glimpse into
+              the inner workings of my design process."
+          />
+        </Center>
         <Section>
           <Heading as="h2" size="lg">
             Background
