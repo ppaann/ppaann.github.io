@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6b7d80c.css",
-    "main.js": "/static/js/main.eb072d86.js",
+    "main.css": "/static/css/main.2e9cf227.css",
+    "main.js": "/static/js/main.a7f62011.js",
     "static/media/home_lo.png": "/static/media/home_lo.12f110a8bea6e149c0ce.png",
     "static/media/vivian_dance.png": "/static/media/vivian_dance.806de40afde41d8aa718.png",
     "static/media/stakeholderMap.jpeg": "/static/media/stakeholderMap.758825f1be7a6a88b2ea.jpeg",
@@ -36,11 +36,11 @@
     "static/media/raleway-vietnamese-400-normal.woff2": "/static/media/raleway-vietnamese-400-normal.bb6f51e1b67ec8802d57.woff2",
     "static/media/raleway-vietnamese-400-normal.woff": "/static/media/raleway-vietnamese-400-normal.6e3329d005a65d1f9bb5.woff",
     "index.html": "/index.html",
-    "main.d6b7d80c.css.map": "/static/css/main.d6b7d80c.css.map",
-    "main.eb072d86.js.map": "/static/js/main.eb072d86.js.map"
+    "main.2e9cf227.css.map": "/static/css/main.2e9cf227.css.map",
+    "main.a7f62011.js.map": "/static/js/main.a7f62011.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6b7d80c.css",
-    "static/js/main.eb072d86.js"
+    "static/css/main.2e9cf227.css",
+    "static/js/main.a7f62011.js"
   ]
 }
