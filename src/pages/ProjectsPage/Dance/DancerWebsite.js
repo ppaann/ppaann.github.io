@@ -1,27 +1,133 @@
 import React from "react";
-import Section from "../../../components/Section/Section";
-import { Center, Container, Heading, Text } from "@chakra-ui/react";
-import ProjectSummary from "../../../components/ProjectSummary/Projectsummary";
+import {
+  Center,
+  Container,
+  Heading,
+  Text,
+  Image,
+  Flex,
+  VStack,
+  Box,
+} from "@chakra-ui/react";
 
-import NoteArea from "../../../components/NoteArea/NoteArea";
+import Section from "../../../components/Section/Section";
+import ProjectSummary from "../../../components/ProjectSummary/Projectsummary";
+import ImageInArticle from "../../../components/ImageInArticle";
+
+import vivianDance from "../../../assets/vivian_dance.png";
+import logo from "./assets/icon.png";
+import insta_1 from "./assets/insta_1.png";
 
 const DancerWebsite = () => {
   return (
-    <article>
-      <Container maxW="container.xl">
-        <ProjectSummary
-          heading="Design Story of Vivian's Pole dance website"
-          description="The design thinking in Vivian's website, a Biochemistry Post-Doc turned pole dance trainer. "
+    <Container maxW="container.xl" as="article">
+      <ProjectSummary
+        heading="Story of Vivian's Pole dance website"
+        description="The design thinking in Vivian's website, a Biochemistry Post-Doc turned pole dance trainer. "
+      />
+      <Center>
+        <Image
+          src={vivianDance}
+          alt="Vivian Pole Dance"
+          w={["100%", "80%", "50%"]}
         />
+      </Center>
+      <Container maxW="container.lg">
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          pt="120px"
+          pb="120px"
+        >
+          <VStack w={{ base: "100%", md: "50%" }}>
+            <img
+              alt="dance logo"
+              src={logo}
+              style={{
+                width: "130px",
+                borderRadius: "15px",
+              }}
+            />
 
-        <Center>
-          <NoteArea
-            title="Greetings!"
-            content="Please be advised that I am currently hard at work refining this
-              article. \nYou are perusing a MVP eidtion, which offers you a glimpse into
-              the inner workings of my design process."
-          />
-        </Center>
+            <p
+              style={{
+                whiteSpace: "nowrap",
+                fontWeight: "600",
+              }}
+            >
+              Vivian's Pole Dance
+            </p>
+          </VStack>
+          <Box
+            w={{ base: "100%", md: "50%" }}
+            pl={{ base: "0", md: "15" }}
+            textAlign={{ base: "center", md: "left" }}
+          >
+            <Text pt="12px">
+              Vivian's pole dance website: introduce Vivian as a expert pole
+              dancer & trainer. Discover her journey & unique courses.
+            </Text>
+            <Text style={{ paddingTop: "16px" }}>
+              Vivian showcased her dance and work exclusively on Instagram. I
+              suggested creating a website to enhance her professional image,
+              inspire others, and reach audiences beyond Instagram. After
+              convincing her of its benefits, I designed and developed the site.
+            </Text>
+          </Box>
+        </Flex>
+      </Container>
+      <Container id="work" as="section" maxW="container.xl">
+        <Flex
+          id="role-description"
+          flexDirection={{ base: "column", md: "row" }}
+          justifyContent="space-around"
+          flexWrap="wrap"
+          alignContent={{ base: "center", md: "normal" }}
+          pb="14"
+          sx={{ "> div": { paddingBottom: { base: "16px", md: "0" } } }}
+        >
+          <Box w="200px" borderTop={"1px solid #6e6e6e"}>
+            <Text pt="4" fontWeight={"600"}>
+              My Role
+            </Text>
+            <ul>
+              <li>Content Creator</li>
+              <li>UI Designer</li>
+              <li>Frontend Developer</li>
+            </ul>
+          </Box>
+          <Box w="200px" borderTop={"1px solid #6e6e6e"}>
+            <Text pt="4" fontWeight={"600"}>
+              UX / UI
+            </Text>
+            <p></p>
+            <ul>
+              <li>User study</li>
+              <li>Requirement Analysis</li>
+              <li>UI design</li>
+            </ul>
+            <Text pt="4" fontWeight={"600"}>
+              Frontend
+            </Text>
+            <ul>
+              <li>Website development</li>
+              <li>Deployable</li>
+            </ul>
+          </Box>
+          <Box w="200px" borderTop={"1px solid #6e6e6e"}>
+            <Text pt="4" fontWeight={"600"}>
+              Tools
+            </Text>
+            <ul>
+              <li>Photoshop</li>
+              <li>Balsamiq</li>
+              <li>React</li>
+              <li>NextJS</li>
+              <li>TailwindCSS</li>
+            </ul>
+          </Box>
+        </Flex>
+      </Container>
+      <Container maxW="container.lg">
         <Section>
           <Heading as="h2" size="lg">
             Background
@@ -44,11 +150,19 @@ const DancerWebsite = () => {
             Motivation
           </Heading>
           <Text>
+            Instagram has it's limitations, it can only showcase a limited part
+            of her story. And it requires registration to view the content.
             Vivian requires a website to reach a broader audience, especially
             those beyond the realm of social media. The website's primary goal
             is to narrate her unique story, showcase her skills, and facilitate
             easy contact for potential clients.
           </Text>
+          <ImageInArticle
+            hasAnimation={false}
+            description="Instagram need log in to see videos and more contents."
+          >
+            <img src={insta_1} alt="Instagram" />
+          </ImageInArticle>
         </Section>
         <Section>
           <Heading as="h2" size="lg">
@@ -139,7 +253,7 @@ const DancerWebsite = () => {
           </Text>
         </Section>
       </Container>
-    </article>
+    </Container>
   );
 };
 

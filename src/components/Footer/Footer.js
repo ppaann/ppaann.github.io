@@ -17,7 +17,7 @@ const Footer = () => {
   const value = useColorModeValue("purple.200", "purple.700");
 
   return (
-    <VStack backgroundColor={value} as="footer">
+    <VStack backgroundColor={value} as="footer" mt="10">
       {/* <Box w="100%" backgroundColor={bgColor}>
         <svg
           className="waves"
