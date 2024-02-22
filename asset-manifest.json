@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e9cf227.css",
-    "main.js": "/static/js/main.a7f62011.js",
+    "main.css": "/static/css/main.d6b7d80c.css",
+    "main.js": "/static/js/main.273f5da7.js",
     "static/media/home_lo.png": "/static/media/home_lo.12f110a8bea6e149c0ce.png",
     "static/media/vivian_dance.png": "/static/media/vivian_dance.806de40afde41d8aa718.png",
     "static/media/stakeholderMap.jpeg": "/static/media/stakeholderMap.758825f1be7a6a88b2ea.jpeg",
@@ -12,11 +12,13 @@
     "static/media/home_hi.png": "/static/media/home_hi.f8f4cff9864a63baaf0d.png",
     "static/media/s24-home-desk.png": "/static/media/s24-home-desk.ba5a4cca349eb32ca240.png",
     "static/media/design_wireframe.png": "/static/media/design_wireframe.2965f9e3bb1c7cff479d.png",
+    "static/media/insta_1.png": "/static/media/insta_1.91a00a48146078564957.png",
     "static/media/research.jpg": "/static/media/research.3c9637930d5de43d28af.jpg",
     "static/media/design_thread.png": "/static/media/design_thread.fd64a29ee797dac5175f.png",
     "static/media/threadView_ad_new.png": "/static/media/threadView_ad_new.e2bab044898b7c7d5b8e.png",
     "static/media/s24-homepage-m.png": "/static/media/s24-homepage-m.161ea0263cf37cc6b5c1.png",
     "static/media/me.png": "/static/media/me.bfe7cdf27a22bc6051db.png",
+    "static/media/icon.png": "/static/media/icon.7aca569d279f0d60ce85.png",
     "static/media/styleguide.jpg": "/static/media/styleguide.6cb7e1c3dbb3ffdfe3fa.jpg",
     "static/media/home_ads.png": "/static/media/home_ads.2bec3b6c83a1821cafa9.png",
     "static/media/s24-navi.png": "/static/media/s24-navi.874985354f9b772b8ab8.png",
@@ -36,11 +38,11 @@
     "static/media/raleway-vietnamese-400-normal.woff2": "/static/media/raleway-vietnamese-400-normal.bb6f51e1b67ec8802d57.woff2",
     "static/media/raleway-vietnamese-400-normal.woff": "/static/media/raleway-vietnamese-400-normal.6e3329d005a65d1f9bb5.woff",
     "index.html": "/index.html",
-    "main.2e9cf227.css.map": "/static/css/main.2e9cf227.css.map",
-    "main.a7f62011.js.map": "/static/js/main.a7f62011.js.map"
+    "main.d6b7d80c.css.map": "/static/css/main.d6b7d80c.css.map",
+    "main.273f5da7.js.map": "/static/js/main.273f5da7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e9cf227.css",
-    "static/js/main.a7f62011.js"
+    "static/css/main.d6b7d80c.css",
+    "static/js/main.273f5da7.js"
   ]
 }
