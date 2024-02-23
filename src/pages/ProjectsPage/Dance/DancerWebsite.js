@@ -8,6 +8,7 @@ import {
   Flex,
   VStack,
   Box,
+  Link,
 } from "@chakra-ui/react";
 
 import Section from "../../../components/Section/Section";
@@ -17,6 +18,13 @@ import ImageInArticle from "../../../components/ImageInArticle";
 import vivianDance from "../../../assets/vivian_dance.png";
 import logo from "./assets/icon.png";
 import insta_1 from "./assets/insta_1.png";
+import insta_2 from "./assets/insta_2.png";
+import wireframe from "./assets/wireframe.png";
+import inspire_1 from "./assets/inspire_1.jpeg";
+import inspire_2 from "./assets/inspire_2.jpeg";
+import inspire_3 from "./assets/inspire_3.png";
+import inspire_4 from "./assets/inspire_4.png";
+import inspire_5 from "./assets/inspire_5.png";
 
 const DancerWebsite = () => {
   return (
@@ -128,7 +136,7 @@ const DancerWebsite = () => {
         </Flex>
       </Container>
       <Container maxW="container.lg">
-        <Section>
+        <Section id="header">
           <Heading as="h2" size="lg">
             Background
           </Heading>
@@ -145,7 +153,7 @@ const DancerWebsite = () => {
             of pole dance and consider her courses.
           </Text>
         </Section>
-        <Section>
+        <Section id="motivation">
           <Heading as="h2" size="lg">
             Motivation
           </Heading>
@@ -162,9 +170,18 @@ const DancerWebsite = () => {
             description="Instagram need log in to see videos and more contents."
           >
             <img src={insta_1} alt="Instagram" />
+            <img
+              src={insta_2}
+              alt="Instagram 2"
+              style={{
+                position: "absolute",
+                top: "-50px",
+                transform: "scale(0.6)",
+              }}
+            />
           </ImageInArticle>
         </Section>
-        <Section>
+        <Section id="design_process">
           <Heading as="h2" size="lg">
             Approach
           </Heading>
@@ -180,6 +197,95 @@ const DancerWebsite = () => {
             addressing common hesitations related to age, physical fitness, and
             body image.
           </Text>
+
+          <Flex
+            flexDirection={{ base: "column", md: "row" }}
+            py="4"
+            justifyContent
+          >
+            <Box w="100%">
+              <Heading as="h4" size="sm" py="2">
+                Interview and User Study
+              </Heading>
+              <Text>
+                I conducted interviews with Vivian and her students to
+                understand her objectives and her students' needs. I also
+                conducted a user study to understand the potential clients'
+                hesitations and concerns.
+              </Text>
+              <Heading as="h4" size="sm" py="2">
+                Explore Inspirations
+              </Heading>
+              <Text>
+                Seaching for pole dancer's websites, and other dance websites
+                for inspirations. I also got some inspirations from{" "}
+                <Link href="https://dribbble.com/"> Dribbble</Link>
+              </Text>
+              <Heading as="h4" size="sm" py="2">
+                Generate Ideas
+              </Heading>
+              <Text>I created the outline of the website content</Text>
+              <Heading as="h4" size="sm" py="2">
+                Plan and Design
+              </Heading>
+              <Text>
+                Start from a design reach the minimum requirement, then
+                iterately increase the content and adjust the layout{" "}
+              </Text>
+            </Box>
+            <ImageInArticle
+              hasAnimation={false}
+              description="Planning and wireframes"
+            >
+              <Box w="100%" position="relative" h="200px">
+                <Image
+                  src={inspire_2}
+                  alt="Inspiration"
+                  w="100px"
+                  h="180px"
+                  objectFit="cover"
+                  position="absolute"
+                  top="0"
+                  left="0"
+                />
+                <Image
+                  src={inspire_3}
+                  alt="Inspiration"
+                  h="180px"
+                  position="absolute"
+                  top="0"
+                  left="100px"
+                  transform="translateY(-5px)"
+                />
+                <Image
+                  src={inspire_5}
+                  alt="Inspiration"
+                  h="180px"
+                  position="absolute"
+                  top="0"
+                  left="300px"
+                />
+                <Image
+                  src={inspire_4}
+                  alt="Inspiration"
+                  h="180px"
+                  position="absolute"
+                  top="0"
+                  left="260px"
+                  objectFit="cover"
+                  transform="translateY(-5px)"
+                />
+                <Image
+                  src={inspire_1}
+                  alt="Inspiration"
+                  height="180px"
+                  position="relative"
+                  transform="translateY(-10px)"
+                />
+              </Box>
+              <Image src={wireframe} alt="wireframe" w="60%" />
+            </ImageInArticle>
+          </Flex>
         </Section>
         <Section>
           <Heading as="h3" size="md">
