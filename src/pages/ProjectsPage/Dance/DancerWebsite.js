@@ -192,10 +192,9 @@ const DancerWebsite = () => {
             Understanding potential clients' hesitations is key to encouraging
             participation in pole dance. In collaboration with Vivian, we've
             identified specific concerns to address based on her experience. To
-            counter these, the website will feature empathetic slogans and
-            content that resonate with the target audience, particularly
-            addressing common hesitations related to age, physical fitness, and
-            body image.
+            counter these, the website feature empathetic slogans and content
+            that resonate with the target audience, particularly addressing
+            common hesitations related to age, physical fitness, and body image.
           </Text>
 
           <Flex
@@ -205,37 +204,52 @@ const DancerWebsite = () => {
           >
             <Box w="100%">
               <Heading as="h4" size="sm" py="2">
-                Interview and User Study
+                Comprehensive Interviews and User Studies
               </Heading>
               <Text>
-                I conducted interviews with Vivian and her students to
-                understand her objectives and her students' needs. I also
-                conducted a user study to understand the potential clients'
-                hesitations and concerns.
+                To gather understanding from multiple resources, I conducted
+                interviews with Vivian and her students to understand her
+                objectives and her students' needs. I also conducted a user
+                study to understand the potential clients' hesitations and
+                concerns.
               </Text>
               <Heading as="h4" size="sm" py="2">
-                Explore Inspirations
+                Inspirational Exploration
               </Heading>
               <Text>
-                Seaching for pole dancer's websites, and other dance websites
-                for inspirations. I also got some inspirations from{" "}
-                <Link href="https://dribbble.com/"> Dribbble</Link>
+                Collecting design ideas and inspirations from a wide range of
+                sources, including a thorough analysis of existing pole dance
+                and general dance websites. Additionally, platforms like{" "}
+                <Link href="https://dribbble.com/"> Dribbble</Link> provided
+                rich creative concepts
               </Text>
               <Heading as="h4" size="sm" py="2">
-                Generate Ideas
-              </Heading>
-              <Text>I created the outline of the website content</Text>
-              <Heading as="h4" size="sm" py="2">
-                Plan and Design
+                Ideation and Content Development
               </Heading>
               <Text>
-                Start from a design reach the minimum requirement, then
-                iterately increase the content and adjust the layout{" "}
+                I created a content outline for the website. This align with
+                users' interests and concerns, setting the stage for a website
+                that not only informs but also inspires and engages.{" "}
+              </Text>
+              <Heading as="h4" size="sm" py="2">
+                Iterative Design and Development
+              </Heading>
+              <Text>
+                Starting with a minimalist design that meets core user needs, I
+                plan an iterative development process. The content will evolve
+                along with Vivian's growing experience and audience feedback.
+                Initial content includes: Vivian’s personal story, her training
+                milestones, an expanded narrative on why pole dancing is
+                suitable for everyone. Navigation will be enhanced as the
+                content grows. Website performance will be monitored through SEO
+                analytics, focusing on user engagement metrics such as message
+                inquiries and search trend data. Google tags will be utilized
+                for tracking and improving user interaction.
               </Text>
             </Box>
             <ImageInArticle
               hasAnimation={false}
-              description="Planning and wireframes"
+              description="Inspiration and wireframes"
             >
               <Box w="100%" position="relative" h="200px">
                 <Image
@@ -311,21 +325,6 @@ const DancerWebsite = () => {
           </Text>
         </Section>
 
-        <Section>
-          <Heading as="h2" size="lg">
-            Iterative Process:
-          </Heading>
-          <Text>
-            Iterative Process: The content will evolve along with Vivian's
-            growing experience and audience feedback. Initial content includes:
-            Vivian’s personal story, her training milestones, an expanded
-            narrative on why pole dancing is suitable for everyone. Navigation
-            will be enhanced as the content grows. Website performance will be
-            monitored through SEO analytics, focusing on user engagement metrics
-            such as message inquiries and search trend data. Google tags will be
-            utilized for tracking and improving user interaction.
-          </Text>
-        </Section>
         <Section>
           <Heading as="h2" size="lg">
             My Role
