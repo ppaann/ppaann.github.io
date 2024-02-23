@@ -1,11 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.d6b7d80c.css",
-    "main.js": "/static/js/main.273f5da7.js",
+    "main.js": "/static/js/main.a22290b7.js",
+    "static/media/inspire_3.png": "/static/media/inspire_3.c35aaf43604512426f88.png",
+    "static/media/inspire_4.png": "/static/media/inspire_4.eebd1b51a98416813490.png",
+    "static/media/wireframe.png": "/static/media/wireframe.2fd907f8ae19d9e8d7f8.png",
+    "static/media/inspire_5.png": "/static/media/inspire_5.355d9ca75b4615d66411.png",
     "static/media/home_lo.png": "/static/media/home_lo.12f110a8bea6e149c0ce.png",
     "static/media/vivian_dance.png": "/static/media/vivian_dance.806de40afde41d8aa718.png",
     "static/media/stakeholderMap.jpeg": "/static/media/stakeholderMap.758825f1be7a6a88b2ea.jpeg",
     "static/media/design_demo.png": "/static/media/design_demo.edf3174bd2ef1ba89c8b.png",
+    "static/media/insta_2.png": "/static/media/insta_2.b690f14173f30071e331.png",
+    "static/media/inspire_2.jpeg": "/static/media/inspire_2.be78cb3b2b90646d90e9.jpeg",
     "static/media/threadView_ad_draft.png": "/static/media/threadView_ad_draft.8fc551d92c17bde778fd.png",
     "static/media/threadView_ad_old.png": "/static/media/threadView_ad_old.4244d259c9870e475508.png",
     "static/media/userjounery.jpeg": "/static/media/userjounery.001b08e2a6731c32d088.jpeg",
@@ -18,6 +24,7 @@
     "static/media/threadView_ad_new.png": "/static/media/threadView_ad_new.e2bab044898b7c7d5b8e.png",
     "static/media/s24-homepage-m.png": "/static/media/s24-homepage-m.161ea0263cf37cc6b5c1.png",
     "static/media/me.png": "/static/media/me.bfe7cdf27a22bc6051db.png",
+    "static/media/inspire_1.jpeg": "/static/media/inspire_1.d461f464d09d6be726ce.jpeg",
     "static/media/icon.png": "/static/media/icon.7aca569d279f0d60ce85.png",
     "static/media/styleguide.jpg": "/static/media/styleguide.6cb7e1c3dbb3ffdfe3fa.jpg",
     "static/media/home_ads.png": "/static/media/home_ads.2bec3b6c83a1821cafa9.png",
@@ -39,10 +46,10 @@
     "static/media/raleway-vietnamese-400-normal.woff": "/static/media/raleway-vietnamese-400-normal.6e3329d005a65d1f9bb5.woff",
     "index.html": "/index.html",
     "main.d6b7d80c.css.map": "/static/css/main.d6b7d80c.css.map",
-    "main.273f5da7.js.map": "/static/js/main.273f5da7.js.map"
+    "main.a22290b7.js.map": "/static/js/main.a22290b7.js.map"
   },
   "entrypoints": [
     "static/css/main.d6b7d80c.css",
-    "static/js/main.273f5da7.js"
+    "static/js/main.a22290b7.js"
   ]
 }
