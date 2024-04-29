@@ -249,7 +249,7 @@ const S24Project = () => {
           Getting Closer to User-centered Design
         </Heading>
         <Heading as="h3" size="lg">
-          Users' Motivations and Pain Points
+          Use Jounery Map to Identify Users' Motivations and Pain Points
         </Heading>
 
         <p>
